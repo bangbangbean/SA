@@ -10,18 +10,17 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:autoText="true"
+        android:layout_width="408dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="100dp"
         android:background="@color/red"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:text="@string/login_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#E9DEEB"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -54,10 +53,10 @@
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.042"
+        app:layout_constraintVertical_bias="0.041"
         tools:ignore="Autofill" />
 
     <Button
