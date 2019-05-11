@@ -91,7 +91,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="232dp"
         android:gravity="center"
-        android:text="@string/forget_password"
+        android:text="@string/login_forgetpassword"
         android:textSize="18sp"
         android:textColor="@color/lightskyblue"
         app:layout_constraintBottom_toBottomOf="parent"
