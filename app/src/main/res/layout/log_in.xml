@@ -29,8 +29,6 @@
         android:layout_height="57dp"
         android:text=" 哈囉，迪客們!"
         android:background="@color/red"
-        android:text="@string/title"
-        android:background="@drawable/green"
         android:gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="0dp"
