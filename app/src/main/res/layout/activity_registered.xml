@@ -8,7 +8,7 @@
     tools:context=".registered">
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/userpassword"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:ems="10"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.285" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/username"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.053" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/userpasswordcheck"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.822" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/useradress"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginBottom="8dp"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.171" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/warningtext"
         android:layout_width="219dp"
         android:layout_height="148dp"
         android:layout_marginStart="8dp"
