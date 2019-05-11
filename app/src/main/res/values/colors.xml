@@ -7,4 +7,5 @@
     <drawable name="white">#FFFFFF</drawable>
     <drawable name="black">#000000</drawable>
     <drawable name="green">#008000</drawable>
+    <color name="color1">#ffffff</color>
 </resources>
