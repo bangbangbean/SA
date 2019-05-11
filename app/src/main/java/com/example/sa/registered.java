@@ -1,8 +1,10 @@
 package com.example.sa;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class registered extends AppCompatActivity {
 
@@ -12,9 +14,14 @@ public class registered extends AppCompatActivity {
 
         setContentView(R.layout.activity_registered);
 
-        //設定隱藏標題
-        //getSupportActionBar().hide();
-        //設定隱藏狀態
-        //getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
+        Button nextPageBtn = (Button)findViewById(R.id.button);
+        nextPageBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(registered.this , login.class);
+                startActivity(intent);
+            }
+        });
     }
 }
