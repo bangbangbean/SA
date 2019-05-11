@@ -2,4 +2,6 @@
     <string name="app_name">SA</string>
     <string name="registered_name">註冊</string>
     <string name="login_title">哈囉，迪客們!</string>
+    <string name="login_account">使用者名稱或電郵地址</string>
+    <string name="login_password">密碼</string>
 </resources>
