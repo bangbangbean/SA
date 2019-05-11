@@ -11,11 +11,13 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:autoText="true"
         android:background="@color/red"
         android:gravity="center_horizontal"
         android:text="@string/login_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#E9DEEB"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,8 +28,8 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="341dp"
-        android:layout_height="49dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
@@ -45,8 +47,8 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="341dp"
-        android:layout_height="49dp"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
         android:ems="10"
         android:hint="@string/login_password"
         android:inputType="textPassword"

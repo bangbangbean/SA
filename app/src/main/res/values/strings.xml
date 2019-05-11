@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">SA</string>
-    <string name="registered_name">註冊</string>
-    <string name="registered_butten">確定</string>
     <string name="login_title">哈囉，迪客們!</string>
     <string name="login_account">使用者名稱或電郵地址</string>
     <string name="login_password">密碼</string>
     <string name="login_button">登入</string>
+    <string name="registered_name">註冊</string>
+    <string name="registered_username">輸入您的名稱</string>
+    <string name="registered_useradress">電子信箱</string>
+    <string name="registered_userpassword">密碼(至少6位英數)</string>
+    <string name="registered_userpasswordcheck">請您在輸入一次密碼</string>
+    <string name="registered_butten">確定</string>
+
 </resources>
