@@ -11,5 +11,6 @@
     <string name="registered_userpasswordcheck">請您在輸入一次密碼</string>
     <string name="registered_warngingtext">按下註冊後代表我同意\n服務條款 以及 隱私權條款</string>
     <string name="registered_buttentext">註冊</string>
+    <string name="forget_password">忘記密碼?</string>
 
 </resources>
