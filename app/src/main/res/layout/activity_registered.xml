@@ -8,7 +8,7 @@
     tools:context=".registered">
 
     <EditText
-        android:id="@+id/userpassword"
+        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:ems="10"
@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/registertitle"
         app:layout_constraintVertical_bias="0.285" />
 
     <EditText
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/registertitle"
         app:layout_constraintVertical_bias="0.053" />
 
     <EditText
@@ -48,11 +48,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/registertitle"
         app:layout_constraintVertical_bias="0.406" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/registertitle"
         android:layout_width="408dp"
         android:layout_height="69dp"
         android:layout_marginBottom="560dp"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.019" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/reisterbutton"
         android:layout_width="111dp"
         android:layout_height="51dp"
         android:layout_marginTop="8dp"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/registertitle"
         app:layout_constraintVertical_bias="0.171" />
 
     <TextView
@@ -113,7 +113,7 @@
         android:text="@string/registered_warngingtext"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/registertitle"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

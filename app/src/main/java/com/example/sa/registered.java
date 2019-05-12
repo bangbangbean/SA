@@ -14,7 +14,7 @@ public class registered extends AppCompatActivity {
 
         setContentView(R.layout.activity_registered);
 
-        Button nextPageBtn = (Button)findViewById(R.id.button);
+        Button nextPageBtn = (Button)findViewById(R.id.registerbutton);
         nextPageBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

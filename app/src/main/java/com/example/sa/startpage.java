@@ -40,7 +40,7 @@ public class startpage extends AppCompatActivity {
         image1 = (ImageView) findViewById(R.id.imageView);
         //初始化时显示第一张图片
         image1.setImageResource(images[0]);
-        Button btn = (Button) findViewById(R.id.button);
+        Button btn = (Button) findViewById(R.id.registerbutton);
         btn.setOnClickListener(new View.OnClickListener() {
 
             @Override

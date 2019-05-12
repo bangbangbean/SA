@@ -9,7 +9,7 @@
     tools:context=".login">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/logintitle"
         android:layout_width="408dp"
         android:layout_height="69dp"
         android:layout_marginBottom="100dp"
@@ -27,7 +27,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/useraccount"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:layout_marginStart="8dp"
@@ -41,12 +41,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/logintitle"
         app:layout_constraintVertical_bias="0.103"
         tools:ignore="Autofill" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/password"
         android:layout_width="350dp"
         android:layout_height="70dp"
         android:ems="10"
@@ -56,12 +56,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintTop_toBottomOf="@+id/useraccount"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="Autofill" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/loginbutton"
         android:layout_width="220dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
@@ -78,10 +78,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/logintitle" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/forgetpassword"
         android:layout_width="156dp"
         android:layout_height="40dp"
         android:layout_marginStart="80dp"
@@ -89,7 +89,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="232dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/login_forgetpassword"
         android:textColor="@color/lightskyblue"
@@ -98,11 +98,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.281"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.984" />
+        app:layout_constraintTop_toTopOf="@+id/logintitle"
+        app:layout_constraintVertical_bias="0.657" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/register"
         android:layout_width="156dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -110,7 +110,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="96dp"
         android:layout_marginRight="96dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="196dp"
         android:gravity="center"
         android:text="@string/registered_buttentext"
         android:textColor="@color/lightskyblue"
@@ -119,7 +119,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.788"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.299" />
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton"
+        app:layout_constraintVertical_bias="0.968" />
 
 </android.support.constraint.ConstraintLayout>
