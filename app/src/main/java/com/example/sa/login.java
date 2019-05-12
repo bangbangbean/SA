@@ -27,6 +27,7 @@ public class login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         tv3 = (TextView) findViewById(R.id.forgetpassword);
         tv3.setOnClickListener(new OnClickListener()
         {

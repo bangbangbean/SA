@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SA</string>
     -------------------------------------------------------------------------
+    //初始頁
+    <string name="startpage_skipbt">略過</string>
+    <string name="startpage_loginbt">登入</string>
+    -------------------------------------------------------------------------
     //登入頁面
     <string name="login_title">哈囉，迪客們!</string>
     <string name="login_account">使用者名稱或電郵地址</string>

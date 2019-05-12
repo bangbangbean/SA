@@ -11,7 +11,6 @@ public class registered extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_registered);
 
         Button nextPageBtn = (Button)findViewById(R.id.registerbutton);
