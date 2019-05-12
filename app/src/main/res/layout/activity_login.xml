@@ -92,14 +92,14 @@
         android:layout_marginBottom="232dp"
         android:gravity="center"
         android:text="@string/login_forgetpassword"
-        android:textSize="18sp"
         android:textColor="@color/lightskyblue"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.281"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.929" />
+        app:layout_constraintVertical_bias="0.984" />
 
     <TextView
         android:id="@+id/textView4"
@@ -113,13 +113,13 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/registered_buttentext"
-        android:textSize="18sp"
         android:textColor="@color/lightskyblue"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.788"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.239" />
+        app:layout_constraintVertical_bias="0.299" />
 
 </android.support.constraint.ConstraintLayout>

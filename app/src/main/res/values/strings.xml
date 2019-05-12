@@ -17,5 +17,10 @@
     <string name="registered_warngingtext">按下註冊後代表我同意\n服務條款 以及 隱私權條款</string>
     <string name="registered_buttentext">註冊</string>
     --------------------------------------------------------------------------
-    //註冊頁面
+    //忘記密碼
+    <string name="forgetpassword_title">重設密碼</string>
+    <string name="forgetpassword_input">請輸入你註冊大迪克的Email或電話號碼</string>
+    <string name="forgetpassword_emailorphone">Email/電話</string>
+    <string name="forgetpassword_button">繼續</string>
+    --------------------------------------------------------------------------
 </resources>
