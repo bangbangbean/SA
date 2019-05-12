@@ -18,7 +18,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        tv4 = (TextView) findViewById(R.id.textView4);
+        tv4 = (TextView) findViewById(R.id.register);
         tv4.setOnClickListener(new OnClickListener()
         {
             public void onClick(View v)
@@ -27,7 +27,7 @@ public class login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        tv3 = (TextView) findViewById(R.id.textView3);
+        tv3 = (TextView) findViewById(R.id.forgetpassword);
         tv3.setOnClickListener(new OnClickListener()
         {
             public void onClick(View v)

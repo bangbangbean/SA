@@ -23,4 +23,9 @@
     <string name="forgetpassword_emailorphone">Email/電話</string>
     <string name="forgetpassword_button">繼續</string>
     --------------------------------------------------------------------------
+    //驗證身分
+    <string name="certification_number">驗證碼</string>
+    <string name="certification_resend">重寄</string>
+    <string name="certification_button">繼續</string>
+    --------------------------------------------------------------------------
 </resources>
