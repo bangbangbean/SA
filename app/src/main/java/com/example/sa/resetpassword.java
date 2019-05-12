@@ -6,18 +6,19 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
-public class certification extends AppCompatActivity {
-    private Button btn3;
+public class resetpassword extends AppCompatActivity {
+    private Button btn6;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_certification);
-        btn3 = (Button) findViewById(R.id.button3);
-        btn3.setOnClickListener(new OnClickListener()
+        setContentView(R.layout.activity_resetpassword);
+        btn6 = (Button) findViewById(R.id.button6);
+        btn6.setOnClickListener(new OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(certification.this, resetpassword.class);
+                Intent intent= new Intent(resetpassword.this, login.class);
                 startActivity(intent);
             }
         });
