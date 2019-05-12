@@ -12,7 +12,6 @@
         <activity android:name=".home"></activity>
         <activity android:name=".certification" />
         <activity android:name=".resetpassword"></activity>
-        <activity android:name=".certification" />
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
