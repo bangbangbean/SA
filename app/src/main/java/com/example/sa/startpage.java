@@ -68,7 +68,7 @@ public class startpage extends AppCompatActivity {
         });
 
         Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new MyTimerTask(),3000,6000);
+        timer.scheduleAtFixedRate(new MyTimerTask(),3000,2500);
 
 
     }
