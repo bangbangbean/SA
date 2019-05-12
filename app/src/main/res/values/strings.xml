@@ -18,7 +18,7 @@
     <string name="registered_buttentext">註冊</string>
     --------------------------------------------------------------------------
     //忘記密碼
-    <string name="forgetpassword_title">重設密碼</string>
+    <string name="forgetpassword_title">忘記密碼</string>
     <string name="forgetpassword_input">請輸入你註冊大迪克的Email或電話號碼</string>
     <string name="forgetpassword_emailorphone">Email/電話</string>
     <string name="forgetpassword_button">繼續</string>
@@ -27,5 +27,11 @@
     <string name="certification_number">驗證碼</string>
     <string name="certification_resend">重寄</string>
     <string name="certification_button">繼續</string>
+    --------------------------------------------------------------------------
+    //重設密碼
+    <string name="resetpassword_reset">重設密碼</string>
+    <string name="resetpassword_newpassword">輸入新密碼</string>
+    <string name="resetpassword_checkpassword">確認新密碼</string>
+    <string name="resetpassword_submit">送出</string>
     --------------------------------------------------------------------------
 </resources>
