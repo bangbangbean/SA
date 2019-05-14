@@ -49,6 +49,7 @@
     <string name="bartergoods_name">勞力士能者多勞系列</string>
     --------------------------------------------------------------------------
     //首頁
+    <string name="dickshop_titlebar">迪克商場</string><string name="_13_390_35_39_1_1_5">x</string>
     <string name="dickshop_titlebar">迪克商場</string>
     <string name="title_activity_acti">acti</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -65,5 +66,6 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     --------------------------------------------------------------------------
-
+   //商品介面
+    <string name = "newproducts_aaa">商品名稱:\n簡約感細條夾腳涼鞋\n商品描述:\n價錢：390\n顏色：黑、杏、白\n尺寸：35-39（正常版)\n跟高：前1 後1.5 公分</string>
 </resources>
