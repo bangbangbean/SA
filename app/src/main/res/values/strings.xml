@@ -69,5 +69,5 @@
     --------------------------------------------------------------------------
     //商品介面
     <string name="newproducts_aaa">商品名稱:\n簡約感細條夾腳涼鞋\n商品描述:\n價錢：390\n顏色：黑、杏、白\n尺寸：35-39（正常版)\n跟高：前1 後1.5 公分</string>
-    <string name="title_activity_exchangehome">activity_exchangehome</string>
+    <string name="title_activity_exchangehome ">activity_exchangehome</string>
 </resources>
