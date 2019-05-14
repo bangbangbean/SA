@@ -53,9 +53,8 @@
 
     <TextView
         android:id="@+id/registertitle"
-        android:layout_width="408dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="560dp"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
         android:background="@color/red"
         android:gravity="center"
         android:text="@string/registered_name"
@@ -63,10 +62,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.019" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/registerbutton"
