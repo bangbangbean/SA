@@ -54,8 +54,9 @@
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
     --------------------------------------------------------------------------
-    //迪克商場
-    <string name="dickshop_titlebar">迪克商場</string><string name="_13_390_35_39_1_1_5">x</string>
+    //首頁
+    <string name="dickshop_titlebar">迪克商場</string>
+    <string name="_13_390_35_39_1_1_5">x</string>
     --------------------------------------------------------------------------
    //商品介面
     <string name = "newproducts_aaa">商品名稱:\n簡約感細條夾腳涼鞋\n商品描述:\n價錢：390
@@ -65,10 +66,11 @@
         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;賣家評價3.8\n新北市，台灣 </string>
     <string name = "newproducts_ccc">宅配、店到店、面交
     </string>
+
     ---------------------------------------------------------------------------
     //以物易物首頁
-    <string name = "exchange_a">香蕉</string>
-    <string name = "exchange_b">蘋果</string>
-    <string name = "exchange_c">鳳梨</string>
+    <string name="exchange_a">香蕉</string>
+    <string name="exchange_b">蘋果</string>
+    <string name="exchange_c">鳳梨</string>
 
 </resources>
