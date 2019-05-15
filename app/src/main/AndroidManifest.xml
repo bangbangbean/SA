@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".shoppingcar"></activity>
-        <activity android:name=".startpage"/>
+        <activity android:name=".exchangehome"></activity>
+        <activity android:name=".shoppingcar" />
         <activity android:name=".dickshop" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
@@ -20,7 +20,7 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
-        <activity android:name=".navigation_drawer">
+        <activity android:name=".startpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

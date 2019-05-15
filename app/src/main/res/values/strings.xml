@@ -40,27 +40,36 @@
     --------------------------------------------------------------------------
     //首頁
     <string name="home_submit">送出</string>
-    <string name="home_ttttt">送出</string>
-    <string name="home_bbbbb">送出</string>
-    --------------------------------------------------------------------------
-    //以物易物
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
     --------------------------------------------------------------------------
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
     --------------------------------------------------------------------------
     //首頁
-    <string name="dickshop_titlebar">迪克商場</string><string name="_13_390_35_39_1_1_5">x</string>
+    <string name="dickshop_titlebar">迪克商場</string>
+    <string name="_13_390_35_39_1_1_5">x</string>
     --------------------------------------------------------------------------
-   //商品介面
-    <string name = "newproducts_aaa">商品名稱:\n簡約感細條夾腳涼鞋\n商品描述:\n價錢：390\n顏色：黑、杏、白\n尺寸：35-39（正常版)\n跟高：前1 後1.5 公分</string>
-    <string name = "newproducts_bbb">Uber Huang&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;賣家評價3.8\n新北市，台灣 </string>
-    <string name = "newproducts_ccc">宅配、店到店、面交\n備貨時間: 1 天 ~ 3天\n新北市，台灣
-    </string>
+    //商品介面
+    <string name="newproducts_aaa">商品名稱:\n簡約感細條夾腳涼鞋\n商品描述:\n價錢：390
+        \n顏色：黑、杏、白\n尺寸：35-39（正常版)\n跟高：前1 後1.5 公分</string>
+    <string name="newproducts_bbb">Uber Huang&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;賣家評價3.8\n新北市，台灣 </string>
+    <string name="newproducts_ccc">宅配、店到店、面交</string>
 
     ---------------------------------------------------------------------------
     //以物易物首頁
-    <string name = "exchange_a">香蕉</string>
-    <string name = "exchange_b">蘋果</string>
-    <string name = "exchange_c">鳳梨</string>
+    <string name="exchange_a">香蕉</string>
+    <string name="exchange_b">蘋果</string>
+    <string name="exchange_c">鳳梨</string>
 
 </resources>
