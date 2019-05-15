@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".shoppingcar"></activity>
+        <activity android:name=".shoppingcar"/>
         <activity android:name=".startpage"/>
         <activity android:name=".dickshop" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
-        <activity android:name=".home" />
+        <activity android:name=".home"/>
         <activity android:name=".certification" />
         <activity android:name=".resetpassword" />
         <activity android:name=".forget_password" />

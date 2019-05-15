@@ -40,15 +40,24 @@
     --------------------------------------------------------------------------
     //首頁
     <string name="home_submit">送出</string>
-    <string name="home_ttttt">送出</string>
-    <string name="home_bbbbb">送出</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
     --------------------------------------------------------------------------
     //以物易物
     --------------------------------------------------------------------------
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
     --------------------------------------------------------------------------
-    //首頁
+    //迪克商場
     <string name="dickshop_titlebar">迪克商場</string><string name="_13_390_35_39_1_1_5">x</string>
     --------------------------------------------------------------------------
    //商品介面
