@@ -57,5 +57,10 @@
     <string name = "newproducts_ccc">宅配、店到店、面交
     </string>
 
+    ---------------------------------------------------------------------------
+    //以物易物首頁
+    <string name = "exchange_a">香蕉</string>
+    <string name = "exchange_b">蘋果</string>
+    <string name = "exchange_c">鳳梨</string>
 
 </resources>

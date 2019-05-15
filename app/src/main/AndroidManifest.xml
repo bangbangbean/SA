@@ -10,14 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".shoppingcar"></activity>
-        <activity
-            android:name=".activity_exchangehome"
-            android:label="@string/title_activity_exchangehome"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".acti"
-            android:label="@string/title_activity_acti"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".startpage"/>
         <activity android:name=".dickshop" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
@@ -27,7 +20,7 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
-        <activity android:name=".startpage">
+        <activity android:name=".navigation_drawer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

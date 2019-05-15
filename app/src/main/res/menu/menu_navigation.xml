@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/navItemOne"
-            android:icon="@drawable/navigation_item_one"
-            android:title="@string/view_one" />
+
+            android:title="@string/exchange_b" />
         <item
             android:id="@+id/navItemAbout"
-            android:icon="@drawable/navigation_item_two"
-            android:title="@string/about"/>
+
+            android:title="@string/exchange_a"/>
         <item
             android:id="@+id/navItemLogout"
-            android:icon="@drawable/navigation_item_logout"
-            android:title="@string/logout"/>
+
+            android:title="@string/exchange_c"/>
     </group>
 </menu>
