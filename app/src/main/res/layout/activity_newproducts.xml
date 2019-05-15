@@ -41,93 +41,99 @@
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="6">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView1"
                 android:layout_width="420dp"
-                android:layout_height="338dp"
+                android:layout_height="293dp"
+                android:layout_weight="1"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/a4" />
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="56dp"
-                android:layout_height="53dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-                app:srcCompat="@drawable/a5" />
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="14dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="2"
+
+                    app:srcCompat="@drawable/a5" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="277dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="2"
+                    android:text="@string/newproducts_bbb"
+                    android:textColor="@color/black"
+
+                    tools:ignore="NotSibling" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/editText10"
-                android:layout_width="392dp"
-                android:layout_height="106dp"
+                android:id="@+id/TextView2"
+                android:layout_width="414dp"
+                android:layout_height="87dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="11dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
+                android:layout_weight="3"
                 android:text="@string/newproducts_aaa"
                 android:textColor="@color/black"
                 android:textSize="12sp"
                 tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="41dp"
-                android:layout_height="31dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="268dp"
-                android:layout_marginRight="268dp"
-                android:layout_marginBottom="8dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-                app:srcCompat="@drawable/s1" />
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="268dp"
+                    android:layout_marginRight="268dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+
+                    app:srcCompat="@drawable/s1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="141dp"
+                android:layout_height="54dp"
+                android:layout_weight="10"
+                android:text="@string/newproducts_ccc"
+                android:textColor="@color/black" />
+
 
         </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="277dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="424dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="@string/newproducts_bbb"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.762"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002"
-        tools:ignore="NotSibling" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="153dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="@string/newproducts_ccc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.212"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9"
-        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
