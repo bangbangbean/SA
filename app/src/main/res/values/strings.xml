@@ -41,14 +41,10 @@
     //首頁
     <string name="home_submit">送出</string>
     <string-array name="planets_array">
-        <item>Mercury</item>
-        <item>Venus</item>
-        <item>Earth</item>
-        <item>Mars</item>
-        <item>Jupiter</item>
-        <item>Saturn</item>
-        <item>Uranus</item>
-        <item>Neptune</item>
+        <item>熱門搜尋</item>
+        <item>TOP 1 腰包</item>
+        <item>TOP 2 VANS</item>
+        <item>TOP 3 小怪獸</item>
     </string-array>
     --------------------------------------------------------------------------
     //以物易物商品頁

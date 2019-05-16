@@ -28,7 +28,6 @@ public class home extends AppCompatActivity {
             // An item was selected. You can retrieve the selected item using
             // parent.getItemAtPosition(pos)
         }
-
         public void onNothingSelected(AdapterView<?> parent) {
             // Another interface callback
         }
