@@ -71,4 +71,13 @@
     <string name="exchange_b">蘋果</string>
     <string name="exchange_c">鳳梨</string>
 
+    ---------------------------------------------------------------------------
+    //商品上架
+    <string name="updateproducts_a">上傳商品</string>
+    <string name="updateproducts_b">Uber Huang</string>
+    <string name="updateproducts_c">我要上架的區域:</string>
+    <string name="updateproducts_d">一般商品區</string>
+    <string name="updateproducts_e">以物易物區</string>
+
+
 </resources>

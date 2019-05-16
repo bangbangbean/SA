@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".exchangehome"></activity>
+        <activity android:name=".updateproducts"></activity>
+        <activity android:name=".exchangehome" />
         <activity android:name=".shoppingcar" />
         <activity android:name=".dickshop" />
         <activity android:name=".newproducts" />
