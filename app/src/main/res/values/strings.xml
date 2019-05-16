@@ -78,6 +78,14 @@
     <string name="updateproducts_c">我要上架的區域:</string>
     <string name="updateproducts_d">一般商品區</string>
     <string name="updateproducts_e">以物易物區</string>
+    <string name="updateproducts_f">商品名稱</string>
+    <string name="updateproducts_g">商品描述</string>
+    <string name="updateproducts_h">商品類別</string>
+    <string name="updateproducts_i">商品庫存</string>
+    <string name="updateproducts_j">&#160;商品地點</string>
+
+
+
 
 
 </resources>
