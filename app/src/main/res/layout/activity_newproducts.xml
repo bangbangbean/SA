@@ -26,7 +26,7 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="659dp"
+        android:layout_height="0dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -261,22 +261,25 @@
                 <Button
                     android:id="@+id/button10"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@drawable/buttonstyle"
                     android:text="私聊" />
 
                 <Button
                     android:id="@+id/button11"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@drawable/buttonstylemain"
                     android:text="買了" />
 
                 <Button
                     android:id="@+id/button12"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="70dp"
                     android:layout_weight="1"
+                    android:background="@drawable/buttonstyle"
                     android:text="加入購物車" />
             </LinearLayout>
 
