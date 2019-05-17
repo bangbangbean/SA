@@ -259,7 +259,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/functionlist_shopbt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -267,7 +267,7 @@
                     android:text="私聊" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/functionlistexchangebt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"
@@ -275,7 +275,7 @@
                     android:text="買了" />
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/functionlist_dickshopbt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"

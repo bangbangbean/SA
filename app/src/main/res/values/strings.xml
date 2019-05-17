@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">SA</string>
     -------------------------------------------------------------------------
+    //通用
+    <string name="functionlist_shop">商場</string>
+    <string name="functionlistexchange">以物易物</string>
+    <string name="functionlist_dickshop">迪幣樂園</string>
+    -------------------------------------------------------------------------
     //初始頁
     <string name="startpage_skipbt">略過</string>
     <string name="startpage_loginbt">登入</string>
@@ -38,19 +43,24 @@
     <string name="resetpassword_checkpassword">確認新密碼</string>
     <string name="resetpassword_submit">送出</string>
     --------------------------------------------------------------------------
-    //首頁
-    <string name="home_submit">送出</string>
+    //商場首頁
+    <string name="home_dick">&#160;&#160;&#160;迪克商場</string>
+    <string name="home_newproduct">&#160;&#160;&#160;最新商品</string>
+    <string name="home_dickproduct1">三星手機</string>
+    <string name="home_dickproduct2">發亮捲線傳輸線</string>
+    <string name="home_dickproduct3">粉紅泡泡行動電源</string>
     <string-array name="planets_array">
         <item>熱門搜尋</item>
         <item>TOP 1 腰包</item>
         <item>TOP 2 VANS</item>
         <item>TOP 3 小怪獸</item>
     </string-array>
+
     --------------------------------------------------------------------------
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
     --------------------------------------------------------------------------
-    //首頁
+    //迪克商場首頁
     <string name="dickshop_titlebar">迪克商場</string>
     <string name="_13_390_35_39_1_1_5">x</string>
     --------------------------------------------------------------------------

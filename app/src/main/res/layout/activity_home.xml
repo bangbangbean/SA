@@ -31,17 +31,200 @@
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="382dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="13dp"
+        android:id="@+id/hotrank"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.003" />
 
+    ------------------------------------------------------------------------------
+    //迪克商場
+
+    <TextView
+        android:id="@+id/dickbg"
+        android:layout_width="380dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/textview_border"
+        android:text="@string/home_dick"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/dickline"
+        android:layout_width="380dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dickbg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/product2"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toStartOf="@+id/product3"
+        app:layout_constraintStart_toEndOf="@+id/product1"
+        app:layout_constraintTop_toBottomOf="@+id/dickline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dickproduct1"
+        tools:srcCompat="@drawable/dickproduct2" />
+
+    <ImageButton
+        android:id="@+id/product1"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="@+id/dickbg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dickbg"
+        app:layout_constraintTop_toBottomOf="@+id/dickline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dickproduct1" />
+
+    <ImageButton
+        android:id="@+id/product3"
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="@+id/dickbg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/dickbg"
+        app:layout_constraintTop_toBottomOf="@+id/dickline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dickproduct1"
+        tools:srcCompat="@drawable/dickproduct3" />
+
+    <TextView
+        android:id="@+id/product1text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/home_dickproduct1"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="@+id/product1"
+        app:layout_constraintStart_toStartOf="@+id/product1"
+        app:layout_constraintTop_toBottomOf="@+id/product1"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/product2text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/home_dickproduct2"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="@+id/product2"
+        app:layout_constraintStart_toStartOf="@+id/product2"
+        app:layout_constraintTop_toBottomOf="@+id/product2"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <TextView
+        android:id="@+id/product3text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/home_dickproduct3"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/dickbg"
+        app:layout_constraintEnd_toEndOf="@+id/product3"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="@+id/product3"
+        app:layout_constraintTop_toBottomOf="@+id/product3"
+        app:layout_constraintVertical_bias="0.72" />
+    ----------------------------------------------------------------------------
+    //最新商品
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/lightgray"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product2text"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/newproductbg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/home_newproduct"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/newproduct1"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/newproductbg"
+        app:layout_constraintEnd_toEndOf="@+id/newproductbg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newproductbg"
+        app:layout_constraintTop_toTopOf="@+id/newproductbg"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newproduct1" />
+
+    <ImageButton
+        android:id="@+id/newproduct2"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/newproductbg"
+        app:layout_constraintEnd_toEndOf="@+id/newproductbg"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/newproduct1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/newproduct2" />
+
+    ----------------------------------------------------------------------------
+    //功能列
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_weight="1"
@@ -55,28 +238,34 @@
         app:layout_constraintVertical_bias="1.0">
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/functionlist_shopbt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@drawable/buttonstylemain"
-            android:text="私聊"
-            android:textColor="#FFFFFF" />
+            android:text="@string/functionlist_shop"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/functionlistexchangebt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/buttonstyle"
             android:layout_weight="1"
-            android:text="買了" />
+            android:background="@drawable/buttonstyle"
+            android:text="@string/functionlistexchange"
+            android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/functionlist_dickshopbt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/buttonstyle"
             android:layout_weight="1"
-            android:text="加入購物車" />
+            android:background="@drawable/buttonstyle"
+            android:text="@string/functionlist_dickshop"
+            android:textSize="18sp" />
     </LinearLayout>
+
+    --------------------------------------------------------------------------
+
 </android.support.constraint.ConstraintLayout>
