@@ -5,6 +5,32 @@
     <string name="functionlist_shop">商場</string>
     <string name="functionlistexchange">以物易物</string>
     <string name="functionlist_dickshop">迪幣樂園</string>
+
+    <string name="classification_1">電腦、電子、周邊</string>
+    <string name="classification_2">手機、通訊</string>
+    <string name="classification_3">家電、影音周邊</string>
+    <string name="classification_4">交通工具</string>
+    <string name="classification_5">相機、攝影機</string>
+    <string name="classification_6">玩具、公仔</string>
+    <string name="classification_7">電玩、遊戲</string>
+    <string name="classification_8">生活、居家</string>
+    <string name="classification_9">男裝、配件、男鞋</string>
+    <string name="classification_10">運動、健身</string>
+    <string name="classification_11">休閒、旅遊</string>
+    <string name="classification_12">名產、食品</string>
+    <string name="classification_13">保養、彩妝</string>
+    <string name="classification_14">流行女裝、內睡衣</string>
+    <string name="classification_15">女性飾品、配件</string>
+    <string name="classification_16">女包、精品與女鞋</string>
+    <string name="classification_17">嬰幼童、母親</string>
+    <string name="classification_18">書籍、文創、科學</string>
+    <string name="classification_19">音樂、電影</string>
+    <string name="classification_20">明星、偶像</string>
+    <string name="classification_21">鐘錶、眼鏡</string>
+    <string name="classification_22">古董、收藏</string>
+    <string name="classification_23">不動產、百業、服務</string>
+    <string name="classification_24">成人專區</string>
+
     -------------------------------------------------------------------------
     //初始頁
     <string name="startpage_skipbt">略過</string>
@@ -100,9 +126,20 @@
     <string name="updateproducts_h">商品類別</string>
     <string name="updateproducts_i">商品庫存</string>
     <string name="updateproducts_j">&#160;商品地點</string>
+    <string name="title_activity_realhome">realhome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
-
-
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
 
 
 </resources>

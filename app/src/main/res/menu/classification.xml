@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/classification_1"
+            android:title="@string/classification_1" />
+        <item
+            android:id="@+id/classification_2"
+            android:title="@string/classification_2" />
+        <item
+            android:id="@+id/classification_3"
+            android:title="@string/classification_3" />
+        <item
+            android:id="@+id/classification_4"
+            android:title="@string/classification_4" />
+        <item
+            android:id="@+id/classification_5"
+            android:title="@string/classification_5" />
+        <item
+            android:id="@+id/classification_6"
+            android:title="@string/classification_6" />
+        <item
+            android:id="@+id/classification_7"
+            android:title="@string/classification_7" />
+        <item
+            android:id="@+id/classification_8"
+            android:title="@string/classification_8" />
+        <item
+            android:id="@+id/classification_9"
+            android:title="@string/classification_9" />
+        <item
+            android:id="@+id/classification_10"
+            android:title="@string/classification_10" />
+        <item
+            android:id="@+id/classification_11"
+            android:title="@string/classification_11" />
+        <item
+            android:id="@+id/classification_12"
+            android:title="@string/classification_12" />
+        <item
+            android:id="@+id/classification_13"
+            android:title="@string/classification_13" />
+        <item
+            android:id="@+id/classification_14"
+            android:title="@string/classification_14" />
+        <item
+        android:id="@+id/classification_15"
+        android:title="@string/classification_15" />
+        <item
+            android:id="@+id/classification_16"
+            android:title="@string/classification_16" />
+        <item
+            android:id="@+id/classification_17"
+            android:title="@string/classification_17" />
+        <item
+            android:id="@+id/classification_18"
+            android:title="@string/classification_18" />
+        <item
+            android:id="@+id/classification_19"
+            android:title="@string/classification_19" />
+        <item
+            android:id="@+id/classification_20"
+            android:title="@string/classification_20" />
+        <item
+        android:id="@+id/classification_21"
+        android:title="@string/classification_21" />
+        <item
+        android:id="@+id/classification_22"
+        android:title="@string/classification_22" />
+        <item
+        android:id="@+id/classification_23"
+        android:title="@string/classification_23" />
+        <item
+        android:id="@+id/classification_24"
+        android:title="@string/classification_24" />
+    </group>
+
+</menu>
