@@ -126,6 +126,10 @@
     <string name="updateproducts_h">商品類別</string>
     <string name="updateproducts_i">商品庫存</string>
     <string name="updateproducts_j">&#160;商品地點</string>
+    ---------------------------------------------------------------------------
+    //結帳
+    <string name="checkout_a">結帳</string>
+    <string name="checkout_b">訂單詳情</string>
     <string name="title_activity_realhome">realhome</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
