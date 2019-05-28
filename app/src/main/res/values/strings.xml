@@ -147,4 +147,8 @@
     ---------------------------------------------------------------------------
     //購物車
     <string name="shopcar_edit">編輯</string>
+    <string name="shopcar_sellera">賣家A的商品</string>
+    <string name="shopcar_sellerb">賣家b的商品</string>
+    <string name="shopcar_sellerc">賣家c的商品</string>
+    <string name="shopcar_sellerd">賣家d的商品</string>
 </resources>
