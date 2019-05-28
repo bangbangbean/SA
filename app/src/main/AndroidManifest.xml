@@ -16,7 +16,6 @@
         </activity>
         <activity android:name=".updateproducts" />
         <activity android:name=".checkout" />
-        <activity android:name=".exchangehome" />
         <activity android:name=".shoppingcar" />
         <activity android:name=".dickshop" />
         <activity android:name=".newproducts" />
@@ -28,6 +27,7 @@
         <activity android:name=".registered" />
         <activity android:name=".login" />
 
+        <activity android:name=".exchangehome"/>
         <activity android:name=".startpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
