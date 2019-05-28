@@ -192,4 +192,10 @@
     <string name="shopcar_sellerc">賣家c的商品</string>
     <string name="shopcar_sellerd">賣家d的商品</string>
     <string name="shopcar_buy">結帳</string>
+    <string name="shopcar_good1">小怪獸</string>
+    <string name="shopcar_good1p">NTD:899</string>
+    <string name="shopcar_good2">鞋子</string>
+    <string name="shopcar_good2p">NTD:3800</string>
+    <string name="shopcar_good3">褲子</string>
+    <string name="shopcar_good3p">NTD:1200</string>
 </resources>
