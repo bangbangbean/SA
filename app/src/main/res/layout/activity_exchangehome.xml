@@ -29,45 +29,54 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
         app:layout_constraintTop_toTopOf="@+id/toolbar2" />
 
-    <ScrollView
-        android:id="@+id/scroll"
-        android:layout_width="409dp"
-        android:layout_height="709dp"
-        android:background="#E9E7E6E6"
+
+    ----------------------------------------------------------------------------
+    //功能列
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="0.0">
-        <TextView
-            android:id="@+id/textView11"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/functionlist_shopbt"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="35dp"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstylemain"
+            android:text="@string/functionlist_shop"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/functionlistexchangebt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/functionlistexchange"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/functionlist_dickshopbt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle"
+            android:text="@string/functionlist_dickshop"
+            android:textSize="18sp" />
+    </LinearLayout>
 
 
-
-            <ImageButton
-                android:id="@+id/goodphoto"
-                android:layout_width="wrap_content"
-                android:layout_height="174dp"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
-
-            <ImageButton
-                android:id="@+id/goodphoto2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                tools:srcCompat="@tools:sample/avatars" />
-
-        </LinearLayout>
-    </ScrollView>
+    --------------------------------------------------------------------------
 
 </android.support.constraint.ConstraintLayout>
