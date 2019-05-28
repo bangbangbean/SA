@@ -115,7 +115,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/functionlistexchangebt"
+            android:id="@+id/functionlist_exchangebt"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"

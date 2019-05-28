@@ -266,7 +266,7 @@
                     android:text="私聊" />
 
                 <Button
-                    android:id="@+id/functionlistexchangebt"
+                    android:id="@+id/functionlist_exchangebt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"

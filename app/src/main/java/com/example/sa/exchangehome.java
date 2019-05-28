@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class exchangehome extends AppCompatActivity {
 
@@ -23,12 +22,12 @@ public class exchangehome extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(exchangehome.this, startpage.class);
+                Intent intent= new Intent(exchangehome.this, realhome.class);
                 startActivity(intent);
             }
         });
 
-        exchangebt = (Button) findViewById(R.id.functionlistexchangebt);
+        exchangebt = (Button) findViewById(R.id.functionlist_exchangebt);
         exchangebt.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
