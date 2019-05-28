@@ -127,6 +127,25 @@
     <string name="updateproducts_h">商品類別</string>
     <string name="updateproducts_i">商品庫存</string>
     <string name="updateproducts_j">&#160;商品地點</string>
+    <string name="updateproducts_k">&#160;備貨時間</string>
+    <string-array name="planets_array1">
+        <item>選擇國家</item>
+        <item>台灣</item>
+        <item>美國</item>
+        <item>日本</item>
+        <item>中國</item>
+        <item>韓國</item>
+        <item>台灣中國</item>
+        <item>不宜洛斯艾莉絲</item>
+        <item>衣索比亞</item>
+    </string-array>
+    <string-array name="planets_array2">
+        <item>選擇城市</item>
+        <item>台北市</item>
+        <item>新北市</item>
+        <item>高雄市</item>
+
+    </string-array>
     ---------------------------------------------------------------------------
     //結帳
     <string name="checkout_a">結帳</string>

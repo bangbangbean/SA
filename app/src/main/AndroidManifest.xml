@@ -14,7 +14,7 @@
             android:label="@string/title_activity_realhome"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".updateproducts" />
+        <activity android:name=".startpage" />
         <activity android:name=".checkout" />
         <activity android:name=".exchangehome" />
         <activity android:name=".shoppingcar" />
@@ -27,7 +27,8 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
-        <activity android:name=".startpage">
+
+        <activity android:name=".updateproducts">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
