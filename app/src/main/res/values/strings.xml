@@ -179,4 +179,5 @@
     <string name="shopcar_sellerb">賣家b的商品</string>
     <string name="shopcar_sellerc">賣家c的商品</string>
     <string name="shopcar_sellerd">賣家d的商品</string>
+    <string name="shopcar_buy">結帳</string>
 </resources>
