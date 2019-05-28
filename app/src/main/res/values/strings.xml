@@ -128,8 +128,8 @@
     <string name="updateproducts_i">商品庫存</string>
     <string name="updateproducts_j">&#160;商品地點</string>
     <string name="updateproducts_k">&#160;備貨時間</string>
-    <string name="updateproducts_l">天～</string>
-    <string name="updateproducts_m">天</string>
+    <string name="updateproducts_l">&#160;天～</string>
+    <string name="updateproducts_m">&#160;天</string>
     <string name="updateproducts_n">選擇配送方式</string>
     <string name="updateproducts_o">宅配到府</string>
     <string name="updateproducts_p">店到店</string>
