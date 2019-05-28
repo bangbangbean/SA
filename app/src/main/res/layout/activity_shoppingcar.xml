@@ -56,30 +56,21 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:gravity="center"
         android:text="@string/shopcar_sellera"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.032" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="80dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registertitle3"
-        app:layout_constraintVertical_bias="0.257"
-        app:srcCompat="@drawable/smallhouse" />
+        android:id="@+id/imageView13"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        app:srcCompat="@drawable/test"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="78dp" />
 
 </android.support.constraint.ConstraintLayout>
