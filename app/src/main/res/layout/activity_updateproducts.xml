@@ -444,6 +444,7 @@
 
     <TextView
         android:id="@+id/textView23"
+
         android:layout_width="390dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
