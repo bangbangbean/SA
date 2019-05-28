@@ -131,6 +131,15 @@
     <string name="updateproducts_l">天～</string>
     <string name="updateproducts_m">天</string>
     <string name="updateproducts_n">選擇配送方式</string>
+    <string name="updateproducts_o">宅配到府</string>
+    <string name="updateproducts_p">店到店</string>
+    <string name="updateproducts_q">超商取貨</string>
+    <string name="updateproducts_r">面交</string>
+    <string name="updateproducts_s">收費方式</string>
+    <string name="updateproducts_t">信用卡</string>
+    <string name="updateproducts_u">銀行轉帳</string>
+    <string name="updateproducts_v">貨到付款</string>
+    <string name="updateproducts_w">面交付款</string>
     <string-array name="planets_array1">
         <item>選擇國家</item>
         <item>台灣</item>
