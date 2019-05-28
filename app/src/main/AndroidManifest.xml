@@ -13,15 +13,9 @@
             android:name=".realhome"
             android:label="@string/title_activity_realhome"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".updateproducts" />
-        <activity android:name=".checkout"></activity>
-        <activity android:name=".updateproducts" />
+        <activity android:name=".checkout" />
         <activity android:name=".exchangehome" />
         <activity android:name=".shoppingcar" />
         <activity android:name=".dickshop" />
