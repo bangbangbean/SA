@@ -131,6 +131,13 @@
     //結帳
     <string name="checkout_a">結帳</string>
     <string name="checkout_b">訂單詳情</string>
+    <string name="checkout_c">簡約感細條夾腳拖鞋</string>
+    <string name="checkout_d">$390</string>
+    <string name="checkout_e">數量:1</string>
+    <string name="checkout_f">規格:US6</string>
+    <string name="checkout_g">寄送方式</string>
+    <string name="checkout_h">賣家宅配$0</string>
+    <string name="checkout_i">新增地址</string>
     <string name="title_activity_realhome">realhome</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
