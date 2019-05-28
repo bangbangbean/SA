@@ -80,7 +80,6 @@
                     android:layout_weight="1"
                     android:text="@string/newproducts_b"
                     android:textColor="@color/black"
-
                     tools:ignore="NotSibling" />
             </LinearLayout>
 
