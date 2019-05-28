@@ -52,9 +52,8 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/buttonstylemain"
+            android:background="@drawable/buttonstyle"
             android:text="@string/functionlist_shop"
-            android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
         <Button
@@ -62,8 +61,9 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="@drawable/buttonstyle"
+            android:background="@drawable/buttonstylemain"
             android:text="@string/functionlistexchange"
+            android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
         <Button
