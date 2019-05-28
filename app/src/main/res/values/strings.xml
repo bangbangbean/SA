@@ -157,9 +157,10 @@
     <string name="checkout_d">$390</string>
     <string name="checkout_e">數量:1</string>
     <string name="checkout_f">規格:US6</string>
-    <string name="checkout_g">寄送方式</string>
+    <string name="checkout_g">寄送方式:</string>
     <string name="checkout_h">賣家宅配$0</string>
     <string name="checkout_i">新增地址</string>
+    <string name="checkout_j">訂單金額:</string>
     <string name="title_activity_realhome">realhome</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -177,4 +178,9 @@
     ---------------------------------------------------------------------------
     //購物車
     <string name="shopcar_edit">編輯</string>
+    <string name="shopcar_sellera">賣家A的商品</string>
+    <string name="shopcar_sellerb">賣家b的商品</string>
+    <string name="shopcar_sellerc">賣家c的商品</string>
+    <string name="shopcar_sellerd">賣家d的商品</string>
+    <string name="shopcar_buy">結帳</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.sa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,11 +16,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 public class realhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Button shopbt;
+    private Button exchangebt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +41,17 @@ public class realhome extends AppCompatActivity
                 R.array.planets_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+
+
+        exchangebt = (Button) findViewById(R.id.functionlist_exchangebt);
+        exchangebt.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realhome.this, exchangehome.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public class SpinnerActivity extends home implements AdapterView.OnItemSelectedListener {

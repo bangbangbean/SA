@@ -14,6 +14,7 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
+
 public class startpage extends AppCompatActivity {
 
     ViewPager viewPager;
@@ -46,7 +47,7 @@ public class startpage extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(startpage.this, home.class);
+                Intent intent= new Intent(startpage.this, realhome.class);
                 startActivity(intent);
             }
         });
