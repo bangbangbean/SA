@@ -192,7 +192,7 @@
 
     <TextView
 
-        android:id="@+id/textView23"
+        android:id="@+id/totalprice"
         android:layout_width="617dp"
         android:layout_height="82dp"
         android:layout_marginStart="8dp"
@@ -219,9 +219,9 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/totalprice"
         app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/totalprice"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.151" />
 
@@ -231,9 +231,9 @@
         android:layout_height="49dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/totalprice"
         app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/totalprice"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/test" />
@@ -247,9 +247,9 @@
         android:text="@string/shopcar_sellerb"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/totalprice"
         app:layout_constraintHorizontal_bias="0.293"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="@+id/totalprice"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.157" />
 
