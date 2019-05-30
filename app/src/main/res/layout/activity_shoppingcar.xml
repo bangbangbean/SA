@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/122"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".shoppingcar">
@@ -369,7 +368,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.16" />
 
@@ -509,7 +508,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="@string/shopcar_good3"
         android:textColor="@color/black"
@@ -519,7 +518,7 @@
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle3"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintVertical_bias="0.709" />
 
     <TextView
         android:id="@+id/textView34"
