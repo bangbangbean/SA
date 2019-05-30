@@ -43,7 +43,7 @@
             android:weightSum="6">
 
             <ImageView
-                android:id="@+id/imageView1"
+                android:id="@+id/productpic"
                 android:layout_width="420dp"
                 android:layout_height="293dp"
                 android:layout_weight="1"
