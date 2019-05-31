@@ -193,7 +193,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
+        app:layout_constraintVertical_bias="0.388"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -362,6 +362,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="115dp"
+        android:layout_height="70dp"
+        android:background="@color/black"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="522dp" />
 
 
 </android.support.constraint.ConstraintLayout>
