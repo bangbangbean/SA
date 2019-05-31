@@ -17,6 +17,7 @@ import android.view.Menu;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class realhome extends AppCompatActivity
@@ -24,6 +25,8 @@ public class realhome extends AppCompatActivity
 
     private Button shopbt;
     private Button exchangebt;
+    private ImageButton productbt;
+    private ImageButton productbt2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +56,25 @@ public class realhome extends AppCompatActivity
                 startActivity(intent);
             }
         });
+        productbt = (ImageButton) findViewById(R.id.newproduct1);
+        productbt.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realhome.this, newproducts.class);
+                startActivity(intent);
+            }
+        });
+        productbt2 = (ImageButton) findViewById(R.id.newproduct2);
+        productbt2.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realhome.this, newproducts.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

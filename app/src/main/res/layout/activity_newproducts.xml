@@ -281,20 +281,20 @@
                     android:text="私聊" />
 
                 <Button
-                    android:id="@+id/functionlist_exchangebt"
+                    android:id="@+id/newproducts_buybt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:background="@drawable/buttonstylemain"
-                    android:text="買了" />
+                    android:text="@string/newproducts_buybt" />
 
                 <Button
-                    android:id="@+id/functionlist_dickshopbt"
+                    android:id="@+id/newproducts_shopcarbt"
                     android:layout_width="wrap_content"
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:background="@drawable/buttonstyle"
-                    android:text="加入購物車" />
+                    android:text="@string/newproducts_shopcarbt" />
             </LinearLayout>
 
         </LinearLayout>

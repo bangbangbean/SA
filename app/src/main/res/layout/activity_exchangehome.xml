@@ -54,14 +54,14 @@
                 android:orientation="horizontal" >
 
                 <ImageButton
-                    android:id="@+id/imageButton9"
+                    android:id="@+id/product1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/good1" />
 
                 <ImageButton
-                    android:id="@+id/imageButton10"
+                    android:id="@+id/product2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -74,14 +74,14 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton11"
+                    android:id="@+id/product3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/good3" />
 
                 <ImageButton
-                    android:id="@+id/imageButton12"
+                    android:id="@+id/product4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

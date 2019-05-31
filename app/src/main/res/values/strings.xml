@@ -83,6 +83,13 @@
         <item>TOP 3 小怪獸</item>
     </string-array>
 
+    <string name="title_activity_realhome">realhome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
     --------------------------------------------------------------------------
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
@@ -108,7 +115,8 @@
     <string name="newproducts_d">備貨時間: 1 天 ~ 3天</string>
     <string name="newproducts_e">新北市，台灣</string>
     <string name="newproducts_f">相似商品</string>
-
+    <string name="newproducts_buybt">買了</string>
+    <string name="newproducts_shopcarbt">加入購物車</string>
     ---------------------------------------------------------------------------
     //以物易物首頁
     <string name="exchange_marketname">Uber Huang</string>
@@ -171,15 +179,12 @@
     <string name="checkout_i">新增地址</string>
     <string name="checkout_j">訂單金額:</string>
     <string name="checkout_k">付款詳情</string>
+    <string name="checkout_l">付款方式:</string>
+
+    <string name="checkout_bt">確認購買</string>
 
 
-    <string name="title_activity_realhome">realhome</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+
 
     ---------------------------------------------------------------------------
     //購物車
