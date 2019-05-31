@@ -28,6 +28,7 @@ public class realhome extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realhome);
+
         Toolbar toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -52,6 +53,7 @@ public class realhome extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
     }
 
     public class SpinnerActivity extends home implements AdapterView.OnItemSelectedListener {
