@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 public class exchangehome extends AppCompatActivity {
 
     private Button shopbt;
-    private Button exchangebt;
+    private Button dickshopbt;
     private ImageButton product1;
     private ImageButton product2;
     private ImageButton product3;
@@ -31,15 +31,17 @@ public class exchangehome extends AppCompatActivity {
             }
         });
 
-        exchangebt = (Button) findViewById(R.id.functionlist_exchangebt);
-        exchangebt.setOnClickListener(new View.OnClickListener()
+        dickshopbt = (Button) findViewById(R.id.functionlist_dickshopbt);
+        dickshopbt.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(exchangehome.this, bartergoods.class);
+                Intent intent= new Intent(exchangehome.this, dickshop.class);
                 startActivity(intent);
             }
         });
+
+
         product1 = (ImageButton) findViewById(R.id.product1);
         product1.setOnClickListener(new View.OnClickListener()
         {

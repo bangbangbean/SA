@@ -184,8 +184,6 @@
     <string name="checkout_bt">確認購買</string>
 
 
-
-
     ---------------------------------------------------------------------------
     //購物車
     <string name="shopcar_edit">編輯</string>
@@ -200,4 +198,7 @@
     <string name="shopcar_good2p">NTD:3800</string>
     <string name="shopcar_good3">褲子</string>
     <string name="shopcar_good3p">NTD:1200</string>
+    <string name="title_activity_realexchengehome">realexchengehome</string>
+
+
 </resources>

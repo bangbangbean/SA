@@ -14,80 +14,86 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Spinner;
 
-public class realhome extends AppCompatActivity
+public class realexchengehome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     private Button shopbt;
-    private Button exchangebt;
-    private ImageButton productbt;
-    private ImageButton productbt2;
+    private Button dickshopbt;
+    private ImageButton product1;
+    private ImageButton product2;
+    private ImageButton product3;
+    private ImageButton product4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_realhome);
-
+        setContentView(R.layout.activity_realexchengehome);
         Toolbar toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        Spinner spinner = (Spinner) findViewById(R.id.hotrank);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.planets_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adapter);
-
-
-        exchangebt = (Button) findViewById(R.id.functionlist_exchangebt);
-        exchangebt.setOnClickListener(new View.OnClickListener()
+        shopbt = (Button) findViewById(R.id.functionlist_shopbt);
+        shopbt.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(realhome.this, realexchengehome.class);
-                startActivity(intent);
-            }
-        });
-        productbt = (ImageButton) findViewById(R.id.newproduct1);
-        productbt.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                Intent intent= new Intent(realhome.this, newproducts.class);
-                startActivity(intent);
-            }
-        });
-        productbt2 = (ImageButton) findViewById(R.id.newproduct2);
-        productbt2.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
-                Intent intent= new Intent(realhome.this, newproducts.class);
+                Intent intent= new Intent(realexchengehome.this, realhome.class);
                 startActivity(intent);
             }
         });
 
-
-    }
-
-    public class SpinnerActivity extends home implements AdapterView.OnItemSelectedListener {
-
-        public void onItemSelected(AdapterView<?> parent, View view,
-                                   int pos, long id) {
-            // An item was selected. You can retrieve the selected item using
-            // parent.getItemAtPosition(pos)
-        }
-        public void onNothingSelected(AdapterView<?> parent) {
-            // Another interface callback
-        }
+        dickshopbt = (Button) findViewById(R.id.functionlist_dickshopbt);
+        dickshopbt.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realexchengehome.this, dickshop.class);
+                startActivity(intent);
+            }
+        });
+        product1 = (ImageButton) findViewById(R.id.product1);
+        product1.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realexchengehome.this, bartergoods.class);
+                startActivity(intent);
+            }
+        });
+        product2 = (ImageButton) findViewById(R.id.product2);
+        product2.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realexchengehome.this, bartergoods.class);
+                startActivity(intent);
+            }
+        });
+        product3 = (ImageButton) findViewById(R.id.product3);
+        product3.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realexchengehome.this, bartergoods.class);
+                startActivity(intent);
+            }
+        });
+        product4 = (ImageButton) findViewById(R.id.product4);
+        product4.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realexchengehome.this, exchangehome.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -99,6 +105,8 @@ public class realhome extends AppCompatActivity
             super.onBackPressed();
         }
     }
+
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override

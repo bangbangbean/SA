@@ -19,7 +19,7 @@ public class bartergoods extends AppCompatActivity {
         backbt = (ImageButton) findViewById(R.id.imageButton2);
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(bartergoods.this, exchangehome.class);
+                Intent intent= new Intent(bartergoods.this, realexchengehome.class);
                 startActivity(intent);
             }
         });

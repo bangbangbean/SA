@@ -21,13 +21,13 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="260dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:background="#FFFF"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2" >
+        app:layout_constraintTop_toTopOf="@+id/toolbar2">
 
     </SearchView>
 
