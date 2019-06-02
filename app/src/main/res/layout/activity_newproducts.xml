@@ -63,7 +63,7 @@
                 android:layout_height="293dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/a4" />
+                app:srcCompat="@drawable/newproduct1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
