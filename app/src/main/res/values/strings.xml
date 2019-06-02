@@ -83,6 +83,13 @@
         <item>TOP 3 小怪獸</item>
     </string-array>
 
+    <string name="title_activity_realhome">realhome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
     --------------------------------------------------------------------------
     //以物易物商品頁
     <string name="bartergoods_name">勞力士能者多勞系列</string>
@@ -95,8 +102,8 @@
     <string name="bartergoods_c">我想換換</string>
     --------------------------------------------------------------------------
     //迪克商場首頁
-    <string name="dickshop_titlebar">迪克商場</string>
-    <string name="_13_390_35_39_1_1_5">x</string>
+    <string name="dickshop_titlebar">迪幣樂園</string>
+
     --------------------------------------------------------------------------
     //商品介面
     <string name="newproducts_a">商品名稱:\n簡約感細條夾腳涼鞋\n\n商品描述:\n價錢：390
@@ -108,7 +115,8 @@
     <string name="newproducts_d">備貨時間: 1 天 ~ 3天</string>
     <string name="newproducts_e">新北市，台灣</string>
     <string name="newproducts_f">相似商品</string>
-
+    <string name="newproducts_buybt">買了</string>
+    <string name="newproducts_shopcarbt">加入購物車</string>
     ---------------------------------------------------------------------------
     //以物易物首頁
     <string name="exchange_marketname">Uber Huang</string>
@@ -170,20 +178,12 @@
     <string name="checkout_h">賣家宅配$0</string>
     <string name="checkout_i">新增地址</string>
     <string name="checkout_j">訂單金額:</string>
-    <string name="title_activity_realhome">realhome</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="checkout_k">付款詳情</string>
+    <string name="checkout_l">付款方式:</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_tools">Tools</string>
-    <string name="menu_share">Share</string>
-    <string name="menu_send">Send</string>
+    <string name="checkout_bt">確認購買</string>
+
+
     ---------------------------------------------------------------------------
     //購物車
     <string name="shopcar_edit">編輯</string>
@@ -192,4 +192,13 @@
     <string name="shopcar_sellerc">賣家c的商品</string>
     <string name="shopcar_sellerd">賣家d的商品</string>
     <string name="shopcar_buy">結帳</string>
+    <string name="shopcar_good1">小怪獸</string>
+    <string name="shopcar_good1p">NTD:899</string>
+    <string name="shopcar_good2">鞋子</string>
+    <string name="shopcar_good2p">NTD:3800</string>
+    <string name="shopcar_good3">褲子</string>
+    <string name="shopcar_good3p">NTD:1200</string>
+    <string name="title_activity_realexchengehome">realexchengehome</string>
+
+
 </resources>

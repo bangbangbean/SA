@@ -6,9 +6,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.content.Intent;
 import android.view.View;
+import android.widget.ImageButton;
+
 public class forget_password extends AppCompatActivity {
     private Button btn1;
-
+    private ImageButton backbt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +21,14 @@ public class forget_password extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent= new Intent(forget_password.this, certification.class);
+                startActivity(intent);
+            }
+        });
+
+        backbt = (ImageButton) findViewById(R.id.imageButton2);
+        backbt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(forget_password.this, login.class);
                 startActivity(intent);
             }
         });

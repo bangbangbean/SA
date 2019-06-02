@@ -21,13 +21,13 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="260dp"
+        android:layout_width="280dp"
         android:layout_height="40dp"
         android:background="#FFFF"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="@+id/toolbar2"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2" >
+        app:layout_constraintTop_toTopOf="@+id/toolbar2">
 
     </SearchView>
 
@@ -36,13 +36,13 @@
     //功能列
 
     <ScrollView
-        android:id="@+id/scrollview"
         android:layout_width="0dp"
         android:layout_height="613dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,17 +55,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton9"
+                    android:id="@+id/product1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#0000"
                     app:srcCompat="@drawable/good1" />
 
                 <ImageButton
-                    android:id="@+id/imageButton10"
+                    android:id="@+id/product2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#0000"
                     app:srcCompat="@drawable/good2" />
             </LinearLayout>
 
@@ -75,17 +77,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/imageButton11"
+                    android:id="@+id/product3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#0000"
                     app:srcCompat="@drawable/good3" />
 
                 <ImageButton
-                    android:id="@+id/imageButton12"
+                    android:id="@+id/product4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="#0000"
                     app:srcCompat="@drawable/good4" />
             </LinearLayout>
 
