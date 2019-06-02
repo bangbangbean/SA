@@ -5,11 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class newproducts extends AppCompatActivity {
 
     private Button newproducts_shopcarbt;
     private Button newproducts_buybt;
+    private ImageButton backbt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +29,14 @@ public class newproducts extends AppCompatActivity {
         newproducts_buybt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent= new Intent(newproducts.this, checkout.class);
+                startActivity(intent);
+            }
+        });
+
+        backbt = (ImageButton) findViewById(R.id.imageButton2);
+        backbt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(newproducts.this, realhome.class);
                 startActivity(intent);
             }
         });

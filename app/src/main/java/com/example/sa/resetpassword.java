@@ -18,7 +18,7 @@ public class resetpassword extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(resetpassword.this, login.class);
+                Intent intent= new Intent(resetpassword.this, certification.class);
                 startActivity(intent);
             }
         });

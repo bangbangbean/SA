@@ -193,10 +193,7 @@
         android:id="@+id/registertitle3"
         android:layout_width="417dp"
         android:layout_height="60dp"
-
         android:layout_marginBottom="8dp"
-
-
         android:background="@color/red"
         android:gravity="center"
         android:text="購物車"
@@ -209,6 +206,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#0000"
+        app:layout_constraintBottom_toBottomOf="@+id/registertitle3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/registertitle3"
+        app:layout_constraintTop_toTopOf="@+id/registertitle3"
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/textView10"
