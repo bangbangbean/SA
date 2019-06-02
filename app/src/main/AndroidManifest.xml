@@ -19,8 +19,8 @@
         <activity android:name=".updateproducts" />
         <activity android:name=".checkout" />
         <activity android:name=".exchangehome" />
-        <activity android:name=".shoppingcar" />
         <activity android:name=".dickshop" />
+        <activity android:name=".shoppingcar" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
         <activity android:name=".home" />
