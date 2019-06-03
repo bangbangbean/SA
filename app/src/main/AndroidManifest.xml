@@ -20,7 +20,7 @@
         <activity android:name=".checkout" />
         <activity android:name=".exchangehome" />
         <activity android:name=".dickshop" />
-        <activity android:name=".shoppingcar" />
+        <activity android:name=".startpage" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
         <activity android:name=".home" />
@@ -29,7 +29,7 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
-        <activity android:name=".startpage">
+        <activity android:name=".shoppingcar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
