@@ -15,15 +15,15 @@
         <activity
             android:name=".realexchengehome"
             android:label="@string/title_activity_realexchengehome"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".realhome"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".updateproducts" />
         <activity android:name=".checkout" />
         <activity android:name=".exchangehome" />
         <activity android:name=".dickshop" />
-        <activity android:name=".startpage" />
+        <activity android:name=".shoppingcar" />
         <activity android:name=".newproducts" />
         <activity android:name=".bartergoods" />
         <activity android:name=".home" />
@@ -32,13 +32,11 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
-        <activity android:name=".shoppingcar">
+        <activity android:name=".startpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

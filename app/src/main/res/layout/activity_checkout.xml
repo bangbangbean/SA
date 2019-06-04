@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/textView14"
         android:layout_width="0dp"
-        android:layout_height="138dp"
+        android:layout_height="120dp"
         android:background="@drawable/textview_border2"
         android:gravity="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -64,8 +64,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.104"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -202,12 +202,12 @@
         android:text="@string/checkout_g"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintVertical_bias="0.35000002"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -263,14 +263,13 @@
         app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:layout_constraintVertical_bias="0.39"
         app:srcCompat="@drawable/triangle" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="290dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/textview_border2"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -377,14 +376,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="115dp"
-        android:layout_height="70dp"
-        android:background="@color/black"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="522dp" />
+
 
 
 </android.support.constraint.ConstraintLayout>
