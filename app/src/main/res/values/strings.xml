@@ -172,8 +172,8 @@
     <string name="checkout_b">訂單詳情</string>
     <string name="checkout_c">簡約感細條夾腳拖鞋</string>
     <string name="checkout_d">$390</string>
-    <string name="checkout_e">數量:1</string>
-    <string name="checkout_f">規格:US6</string>
+    <string name="checkout_e">數量:</string>
+    <string name="checkout_f">規格:</string>
     <string name="checkout_g">寄送方式:</string>
     <string name="checkout_h">賣家宅配$0</string>
     <string name="checkout_i">新增地址</string>

@@ -16,7 +16,9 @@ public class checkout extends AppCompatActivity {
     private ImageButton backbt;
     checkout1 checkout1;
     private Object test1;
-    private TextView productname;
+    private TextView productname;//商品名稱
+    private TextView num;//購買數量
+    private TextView size;//購買大小
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,11 +48,31 @@ public class checkout extends AppCompatActivity {
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
                 productname.setText(response.body().getfields(0).getNormal_product_name());
             }
-
             @Override
             public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
                 productname.setText(t.getMessage());
+            }
+        });
 
+        call.enqueue(new Callback<checkout1>() {
+            @Override
+            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
+                num.setText(response.body().getfields(0).getNormal_product_name());
+            }
+            @Override
+            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
+                num.setText(t.getMessage());
+            }
+        });
+
+        call.enqueue(new Callback<checkout1>() {
+            @Override
+            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
+                size.setText(response.body().getfields(0).getNormal_product_size());
+            }
+            @Override
+            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
+                size.setText(t.getMessage());
             }
         });
     }
