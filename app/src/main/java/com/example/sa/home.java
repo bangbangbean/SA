@@ -14,9 +14,11 @@ import android.widget.Spinner;
 
 public class home extends AppCompatActivity {
 
+
     private Button exchangebt;
     private ImageButton productbt;
     private ImageButton productbt2;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

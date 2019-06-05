@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".shoppingcar">
 
+    <ScrollView
+        android:layout_width="405dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
     <TextView
         android:id="@+id/registertitle3"
         android:layout_width="417dp"
@@ -433,7 +454,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/fuckyou" />
+        app:srcCompat="@drawable/FUCKYOU" />
 
     <TextView
         android:id="@+id/textView19"
