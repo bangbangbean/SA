@@ -10,9 +10,13 @@ public class shopcar {
         this.id = id;
     }
 
-    public shopcar[] getRecords() { return records;}
+    public shopcar[] getRecords() {
+        return records;
+    }
     public String getId(int i){
         return records[i].id;
     }
-    public fields getfields(int i){return records[i].fields;}
+    public fields getfields(int i){
+        return records[i].fields;
+    }
 }
