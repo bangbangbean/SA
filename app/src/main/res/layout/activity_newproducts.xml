@@ -80,7 +80,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
 
                     app:srcCompat="@drawable/huang" />
 
@@ -94,7 +94,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
                     android:text="@string/newproducts_b"
                     android:textColor="@color/black"
                     tools:ignore="NotSibling" />
@@ -111,7 +111,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="3"
-                android:background="@drawable/textview_border2"
+
                 android:text="@string/newproducts_a"
                 android:textColor="@color/black"
                 android:textSize="12sp"
@@ -134,7 +134,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
 
 
                     app:srcCompat="@drawable/s1" />
@@ -149,7 +149,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
                     android:text="@string/newproducts_c"
                     android:textColor="@color/black" />
 
@@ -162,7 +162,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:background="@drawable/textview_border2"
+
                     android:id="@+id/imageView9"
                     android:layout_width="8dp"
                     android:layout_height="25dp"
@@ -177,7 +177,7 @@
 
                 <TextView
                     android:id="@+id/textView4"
-                    android:background="@drawable/textview_border2"
+
                     android:layout_width="277dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -198,7 +198,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:background="@drawable/textview_border2"
+
                     android:id="@+id/imageView10"
                     android:layout_width="10dp"
                     android:layout_height="23dp"
@@ -213,7 +213,7 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:background="@drawable/textview_border2"
+
                     android:layout_width="277dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -238,7 +238,7 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="3"
-                android:background="@drawable/textview_border2"
+
                 android:text="@string/newproducts_f"
                 android:textColor="@color/black"
                 android:textSize="12sp"
@@ -260,7 +260,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
 
 
                     app:srcCompat="@drawable/s4" />
@@ -274,7 +274,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/textview_border2"
+
 
 
                     app:srcCompat="@drawable/s5" />
