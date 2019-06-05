@@ -23,10 +23,12 @@ import android.widget.Spinner;
 public class realhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Button shopbt;
+    private Button dickshopbt;
     private Button exchangebt;
+    private ImageButton shopcar;
     private ImageButton productbt;
     private ImageButton productbt2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +48,28 @@ public class realhome extends AppCompatActivity
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-
+        shopcar = (ImageButton) findViewById(R.id.shopcar);
+        shopcar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(realhome.this, shoppingcar.class);
+                startActivity(intent);
+            }
+        });
         exchangebt = (Button) findViewById(R.id.functionlist_exchangebt);
         exchangebt.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
                 Intent intent= new Intent(realhome.this, realexchengehome.class);
+                startActivity(intent);
+            }
+        });
+        dickshopbt = (Button) findViewById(R.id.functionlist_dickshopbt);
+        dickshopbt.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(realhome.this, dickshop.class);
                 startActivity(intent);
             }
         });
@@ -74,8 +91,6 @@ public class realhome extends AppCompatActivity
                 startActivity(intent);
             }
         });
-
-
     }
 
     public class SpinnerActivity extends home implements AdapterView.OnItemSelectedListener {

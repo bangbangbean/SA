@@ -17,7 +17,8 @@ public class checkout extends AppCompatActivity {
     checkout1 checkout1;
     private Object test1;
     private TextView productname;
-
+    private TextView num;
+    private TextView size;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +32,12 @@ public class checkout extends AppCompatActivity {
             }
         });
         productname = (TextView) findViewById(R.id.productname);
+        num = (TextView) findViewById(R.id.num);
+        size = (TextView) findViewById(R.id.size);
         getCheck1();
     }
 
-    public  void getCheck1(){
+    public void getCheck1(){
         test1 = RetrofitManager.getInstance().getAPI();
 
         // 3. 建立連線的Call，此處設置call為myAPIService中的getAlbums()連線
@@ -44,14 +47,38 @@ public class checkout extends AppCompatActivity {
         call.enqueue(new Callback<checkout1>() {
             @Override
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
-                productname.setText(response.body().getfields(0).getNormal_product_name());
+                productname.append(response.body().getfields(0).getNormal_product_name());
             }
 
             @Override
             public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
-                productname.setText(t.getMessage());
+                productname.append(t.getMessage());
+            }
+        });
 
+        call.enqueue(new Callback<checkout1>() {
+            @Override
+            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
+                num.append(response.body().getfields(0).getNormal_product_stocks());
+            }
+
+            @Override
+            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
+                num.append(t.getMessage());
+            }
+        });
+
+        call.enqueue(new Callback<checkout1>() {
+            @Override
+            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
+                size.append(response.body().getfields(0).getNormal_product_size());
+            }
+
+            @Override
+            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
+                size.append(t.getMessage());
             }
         });
     }
+
 }

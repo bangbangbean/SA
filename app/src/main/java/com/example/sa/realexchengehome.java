@@ -22,10 +22,12 @@ public class realexchengehome extends AppCompatActivity
 
     private Button shopbt;
     private Button dickshopbt;
+    private ImageButton shopcar;
     private ImageButton product1;
     private ImageButton product2;
     private ImageButton product3;
     private ImageButton product4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,15 @@ public class realexchengehome extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        shopcar = (ImageButton) findViewById(R.id.shopcar);
+        shopcar.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(realexchengehome.this, shoppingcar.class);
+                startActivity(intent);
+            }
+        });
+        shopcar.bringToFront();
 
         shopbt = (Button) findViewById(R.id.functionlist_shopbt);
         shopbt.setOnClickListener(new View.OnClickListener()

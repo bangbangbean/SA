@@ -11,6 +11,12 @@ public class fields {
     private String[] Order_system;
     private String[] transport_way;
     private String normal_product_color;
+    private String normal_product_size;
+    private String area;
+    private String[] normal_product_class;
+    private String normal_product_stocks;
+    private String[] added_to_shopping_car;
+    private String status;
     
     public int getNormal_product_number() {
         return normal_product_number;
@@ -52,9 +58,7 @@ public class fields {
         return normal_product_color;
     }
 
-    public String getNormal_product_size() {
-        return normal_product_size;
-    }
+    public String getNormal_product_size() { return normal_product_size; }
 
     public String getArea() {
         return area;
@@ -75,12 +79,5 @@ public class fields {
     public String getStatus() {
         return status;
     }
-
-    private String normal_product_size;
-    private String area;
-    private String[] normal_product_class;
-    private String normal_product_stocks;
-    private String[] added_to_shopping_car;
-    private String status;
 
 }
