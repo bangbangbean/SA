@@ -11,10 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".test"></activity>
+        <activity android:name=".test"/>
         <activity
             android:name=".realexchengehome"
-            android:label="@string/title_activity_realexchengehome"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".realhome"
@@ -32,6 +31,7 @@
         <activity android:name=".forget_password" />
         <activity android:name=".registered" />
         <activity android:name=".login" />
+
         <activity android:name=".startpage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
