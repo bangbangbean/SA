@@ -48,7 +48,6 @@ public class realexchengehome extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        shopcar.bringToFront();
 
         shopbt = (Button) findViewById(R.id.functionlist_shopbt);
         shopbt.setOnClickListener(new View.OnClickListener()
