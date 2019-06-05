@@ -269,7 +269,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/uploadproduct"
         android:layout_width="97dp"
         android:layout_height="91dp"
         android:layout_marginTop="8dp"
@@ -282,7 +282,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573"
+        app:layout_constraintVertical_bias="0.903"
         app:srcCompat="@drawable/plus1" />
 
     <ImageButton
