@@ -102,10 +102,10 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintHorizontal_bias="0.63"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -167,28 +167,11 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/num"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/productnum"
-        app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.365" />
-
-    <TextView
         android:id="@+id/productsize"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
-        android:layout_marginLeft="280dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -198,10 +181,10 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.911"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.85"
+        app:layout_constraintVertical_bias="0.77"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -392,23 +375,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/size"
-        android:layout_width="50dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/textView14"
-        app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/productsize"
-        app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.851" />
+
 
 
 </android.support.constraint.ConstraintLayout>

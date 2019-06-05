@@ -16,9 +16,7 @@ public class checkout extends AppCompatActivity {
     private ImageButton backbt;
     checkout1 checkout1;
     private Object test1;
-    private TextView productname;//商品名稱
-    private TextView num;//購買數量
-    private TextView size;//購買大小
+    private TextView productname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +46,11 @@ public class checkout extends AppCompatActivity {
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
                 productname.setText(response.body().getfields(0).getNormal_product_name());
             }
+
             @Override
             public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
                 productname.setText(t.getMessage());
+
             }
         });
     }
