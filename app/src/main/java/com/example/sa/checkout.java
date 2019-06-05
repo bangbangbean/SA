@@ -53,27 +53,5 @@ public class checkout extends AppCompatActivity {
                 productname.setText(t.getMessage());
             }
         });
-
-        call.enqueue(new Callback<checkout1>() {
-            @Override
-            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
-                num.setText(response.body().getfields(0).getNormal_product_name());
-            }
-            @Override
-            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
-                num.setText(t.getMessage());
-            }
-        });
-
-        call.enqueue(new Callback<checkout1>() {
-            @Override
-            public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
-                size.setText(response.body().getfields(0).getNormal_product_size());
-            }
-            @Override
-            public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
-                size.setText(t.getMessage());
-            }
-        });
     }
 }
