@@ -6,7 +6,7 @@ import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
-public interface test1<一般商品> {
+public interface test1<normalgood> {
     // 測試網站      https://jsonplaceholder.typicode.com/
     // GET網址      https://jsonplaceholder.typicode.com/albums/1
     // POST網址     https://jsonplaceholder.typicode.com/albums
@@ -21,6 +21,9 @@ public interface test1<一般商品> {
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);
 
+    @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
+    Call<Req> getCheck1ById(@Path("id") String id);
+
     @POST("albums") // 用@Body表示要傳送Body資料
-    Call<shopcar> postAlbums(@Body 一般商品 albums);
+    Call<shopcar> postAlbums(@Body normalgood albums);
 }

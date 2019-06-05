@@ -269,7 +269,7 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/uploadproduct"
         android:layout_width="97dp"
         android:layout_height="91dp"
         android:layout_marginTop="8dp"
@@ -282,8 +282,25 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.573"
+        app:layout_constraintVertical_bias="0.903"
         app:srcCompat="@drawable/plus1" />
+
+    <ImageButton
+        android:id="@+id/shopcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="65dp"
+        android:background="#0000"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/shopcar" />
 
 
     --------------------------------------------------------------------------

@@ -54,7 +54,7 @@
 
     <TextView
         android:id="@+id/checkouttitle"
-        android:layout_width="419dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
         android:background="@drawable/textview_border2"
         android:gravity="center"
@@ -91,7 +91,7 @@
     <TextView
         android:id="@+id/productname"
         android:layout_width="136dp"
-        android:layout_height="14dp"
+        android:layout_height="27dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
@@ -103,10 +103,11 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.599"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.09" />
+    app:layout_constraintVertical_bias="0.084" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -140,52 +141,71 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.616"
+        app:layout_constraintVertical_bias="0.89"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/productnum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/checkout_e"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.39"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/num"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/productnum"
+        app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
         android:id="@+id/productsize"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/checkout_f"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/black"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintHorizontal_bias="0.779"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.77"
+        app:layout_constraintTop_toBottomOf="@+id/productnum"
+        app:layout_constraintVertical_bias="0.918"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -377,6 +397,23 @@
         app:layout_constraintTop_toTopOf="@+id/textView2"
         app:layout_constraintVertical_bias="1.0" />
 
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/productsize"
+        app:layout_constraintTop_toBottomOf="@+id/num"
+        app:layout_constraintVertical_bias="0.851" />
 
 
 
