@@ -433,7 +433,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/registertitle3"
         app:layout_constraintVertical_bias="0.327"
-        app:srcCompat="@drawable/fuckyou" />
+        app:srcCompat="@drawable/plusanddeny" />
 
     <TextView
         android:id="@+id/textView19"
@@ -491,7 +491,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linearLayout4"
         app:layout_constraintVertical_bias="0.544"
-        app:srcCompat="@drawable/fuckyou" />
+        app:srcCompat="@drawable/plusanddeny" />
 
     <TextView
         android:id="@+id/textView7"
