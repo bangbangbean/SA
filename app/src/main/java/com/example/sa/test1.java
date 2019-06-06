@@ -3,6 +3,7 @@ package com.example.sa;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -21,9 +22,10 @@ public interface test1<normalgood> {
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);
 
-    @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
-    Call<Req> getCheck1ById(@Path("id") String id);
-
-    @POST("albums") // 用@Body表示要傳送Body資料
-    Call<shopcar> postAlbums(@Body normalgood albums);
+    @POST("shopcar?api_key=keyq0EkjYQRAzfrUN") // 用@Body表示要傳送Body資料
+    @Headers({
+            "Accept: application/json; charset=utf-8",
+            "Content-Type: application/json; charset=utf-8"
+    })
+    Call<shopcar> postInfor(@Body Req fields);
 }

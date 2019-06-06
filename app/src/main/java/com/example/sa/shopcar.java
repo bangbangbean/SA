@@ -13,10 +13,18 @@ public class shopcar {
     public shopcar[] getRecords() {
         return records;
     }
+
     public String getId(int i){
         return records[i].id;
     }
+
     public fields getfields(int i){
         return records[i].fields;
     }
+
+    public String getfieldsName() {
+        return fields.getShopcar_name();
+    }
+
+
 }

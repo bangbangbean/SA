@@ -9,8 +9,8 @@ public class Req {
     public String getId(){
         return id;
     }
-    public Req(shopcar shopcar){
-        this.shopcar = shopcar;
+    public Req(fields fields){
+        this.fields = fields;
     }
     public fields getFields(){
         return fields;
@@ -18,4 +18,9 @@ public class Req {
     public void setFields(com.example.sa.shopcar shopcar){
         this.shopcar = shopcar;
     }
+
+
+
+
+
 }

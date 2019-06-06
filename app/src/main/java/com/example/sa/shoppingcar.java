@@ -13,7 +13,8 @@ import retrofit2.Response;
 public class shoppingcar extends AppCompatActivity {
 
     shopcar shopcar;
-    private TextView textView28;
+    private TextView sellername;
+    private  TextView textView8;
     private Object test1;
 
     @Override
@@ -21,9 +22,15 @@ public class shoppingcar extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoppingcar);
 
-        textView28 = (TextView) findViewById(R.id.textView28);
+        sellername = (TextView) findViewById(R.id.sellername);
         getShopcar();
 
+        try {
+            postinfor();//新增資料
+        } catch (Exception e) {
+            textView8.setText(e.toString());
+            Log.e("MainActivity", e.getMessage());//
+        }
 
         // 2. 透過RetrofitManager取得連線基底
 
@@ -40,15 +47,35 @@ public class shoppingcar extends AppCompatActivity {
             @Override
             public void onResponse(Call<com.example.sa.shopcar> call, Response<shopcar> response) {
 
-                textView28.setText(response.body().getfields(0).getNormal_product_name());
+                sellername.setText(response.body().getfields(0).getNormal_product_name());
+                textView8.setText(response.body().getfields(0).getmembername(0));
             }
 
             @Override
             public void onFailure(Call<com.example.sa.shopcar> call, Throwable t) {
-                textView28.setText(t.getMessage());
+                sellername.setText(t.getMessage());
+                textView8.setText(t.getMessage());
 
             }
         });
+    }
+
+   public void postinfor() {
+       test1 = RetrofitManager.getInstance().getAPI();
+        Call<shopcar> call = ((test1) test1).postInfor(new Req(new fields("123123")));
+        call.enqueue(new Callback<shopcar>() {
+            @Override
+            public void onResponse(Call<shopcar> call, Response<shopcar> response) {
+
+                textView8.setText(response.body().getfieldsName());
+            }
+
+            @Override
+            public void onFailure(Call<shopcar> call, Throwable t) {
+                textView8.setText(t.getMessage());
+            }
+        });
+
     }
 
 
