@@ -28,7 +28,7 @@ public class newproducts extends AppCompatActivity {
         newproducts_buybt = (Button) findViewById(R.id.newproducts_buybt);
         newproducts_buybt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(newproducts.this, checkout.class);
+                Intent intent= new Intent(newproducts.this, shoppingcar.class);
                 startActivity(intent);
             }
         });

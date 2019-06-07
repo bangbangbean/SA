@@ -26,7 +26,7 @@ public class shoppingcar extends AppCompatActivity {
         getShopcar();
 
         try {
-            postinfor();//新增資料
+            //postinfor();//新增資料
         } catch (Exception e) {
             textView8.setText(e.toString());
             Log.e("MainActivity", e.getMessage());//

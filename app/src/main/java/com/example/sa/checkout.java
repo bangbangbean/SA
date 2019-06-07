@@ -48,16 +48,18 @@ public class checkout extends AppCompatActivity {
         call.enqueue(new Callback<checkout1>() {
             @Override
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
-                productname.append(response.body().getfields(0).getNormal_product_name());
+                productname.setText(response.body().getfields(0).getShopcar_name());
+                num.setText(response.body().getfields(0).getShopcar_num()+"");
+                size.setText(response.body().getfields(0).getShopcar_size());
             }
 
             @Override
             public void onFailure(Call<com.example.sa.checkout1> call, Throwable t) {
-                productname.append(t.getMessage());
+                productname.setText(t.getMessage());
+                num.setText(t.getMessage());
+                size.setText(t.getMessage());
             }
         });
-
-
     }
 
 }
