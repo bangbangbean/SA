@@ -90,8 +90,8 @@
 
     <TextView
         android:id="@+id/productname"
-        android:layout_width="214dp"
-        android:layout_height="272dp"
+        android:layout_width="136dp"
+        android:layout_height="27dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
@@ -127,8 +127,10 @@
 
     <TextView
         android:id="@+id/productprice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="22dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -140,10 +142,10 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
-        app:layout_constraintVertical_bias="0.89"
+        app:layout_constraintVertical_bias="0.684"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -190,8 +192,8 @@
         android:layout_width="55dp"
         android:layout_height="35dp"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
         android:layout_marginBottom="15dp"
         android:gravity="center"
         android:text="@string/checkout_f"
@@ -199,7 +201,7 @@
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.779"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/productnum"
         app:layout_constraintVertical_bias="1.0"
@@ -318,8 +320,8 @@
 
     <TextView
         android:id="@+id/totalprice"
-        android:layout_width="65dp"
-        android:layout_height="27dp"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -330,10 +332,11 @@
         android:text="@string/checkout_d"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/red"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView11"
         tools:ignore="MissingConstraints" />
@@ -412,6 +415,42 @@
         app:layout_constraintTop_toBottomOf="@+id/num"
         app:layout_constraintVertical_bias="1.0" />
 
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="84dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="@+id/textView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/productprice"
+        app:layout_constraintTop_toBottomOf="@+id/checkouttitle"
+        app:layout_constraintVertical_bias="0.68" />
+
+    <TextView
+        android:id="@+id/pricetotal"
+        android:layout_width="106dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="left"
+        android:textColor="@color/red"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/moneytitle"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/totalprice"
+        app:layout_constraintTop_toTopOf="@+id/textView11" />
 
 
 </android.support.constraint.ConstraintLayout>

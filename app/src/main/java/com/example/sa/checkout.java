@@ -19,12 +19,13 @@ public class checkout extends AppCompatActivity {
     private TextView productname;
     private TextView num;
     private TextView size;
+    private TextView price;
+    private TextView pricetotal;
+    private int total=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
-
-
         backbt = (ImageButton) findViewById(R.id.imageButton2);
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -35,7 +36,10 @@ public class checkout extends AppCompatActivity {
         productname = (TextView) findViewById(R.id.productname);
         num = (TextView) findViewById(R.id.num);
         size = (TextView) findViewById(R.id.size);
+        price = (TextView) findViewById(R.id.price);
+        pricetotal = (TextView) findViewById(R.id.pricetotal);
         getCheck1();
+
     }
 
     public void getCheck1(){
@@ -51,6 +55,12 @@ public class checkout extends AppCompatActivity {
                 productname.setText(response.body().getfields(0).getShopcar_name());
                 num.setText(response.body().getfields(0).getShopcar_num()+"");
                 size.setText(response.body().getfields(0).getShopcar_size());
+                price.setText(response.body().getfields(0).getShopcar_price()+"");
+                //計算訂單總價數量X單價
+                int dEt1 = Integer.valueOf(num.getText().toString());
+                int dEt2 = Integer.valueOf(price.getText().toString());
+                total = dEt1 * dEt2;
+                pricetotal.setText(Integer.toString(total));
             }
 
             @Override
@@ -58,6 +68,7 @@ public class checkout extends AppCompatActivity {
                 productname.setText(t.getMessage());
                 num.setText(t.getMessage());
                 size.setText(t.getMessage());
+                price.setText(t.getMessage());
             }
         });
     }
