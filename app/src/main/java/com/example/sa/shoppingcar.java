@@ -15,6 +15,9 @@ public class shoppingcar extends AppCompatActivity {
     shopcar shopcar;
     private TextView sellername;
     private  TextView textView8;
+    private  TextView textView25;
+    private  TextView textView29;
+    private  TextView textView20;
     private Object test1;
 
     @Override
@@ -23,7 +26,11 @@ public class shoppingcar extends AppCompatActivity {
         setContentView(R.layout.activity_shoppingcar);
 
         sellername = (TextView) findViewById(R.id.sellername);
-        getShopcar();
+        textView8 = (TextView) findViewById(R.id.textView8);
+        textView25 = (TextView) findViewById(R.id.textView25);
+        textView29 = (TextView) findViewById(R.id.textView29);
+        textView20 = (TextView) findViewById(R.id.textView20);
+        //getShopcar();
 
         try {
             //postinfor();//新增資料
@@ -62,17 +69,25 @@ public class shoppingcar extends AppCompatActivity {
 
    public void postinfor() {
        test1 = RetrofitManager.getInstance().getAPI();
-        Call<shopcar> call = ((test1) test1).postInfor(new Req(new fields("123123")));
+        Call<shopcar> call = ((test1) test1).postInfor(new Req(new fields("123123", "紅", "L",1,5000)));
         call.enqueue(new Callback<shopcar>() {
             @Override
-            public void onResponse(Call<shopcar> call, Response<shopcar> response) {
-
-                textView8.setText(response.body().getfieldsName());
+            public void onResponse(Call<com.example.sa.shopcar> call, Response<shopcar> response) {
+               textView8.setText(response.body().getfieldsName());
+               textView20.setText(response.body().getfieldsColor());
+               textView25.setText(response.body().getfieldsSize());
+              textView29.setText(response.body().getfieldsNum() + "");
+               sellername.setText(response.body().getfieldsPrice() + "");
             }
 
             @Override
             public void onFailure(Call<shopcar> call, Throwable t) {
-                textView8.setText(t.getMessage());
+
+            textView8.setText(t.getMessage());
+                textView20.setText(t.getMessage());
+               textView25.setText(t.getMessage());
+               textView29.setText(t.getMessage());
+                sellername.setText(t.getMessage());
             }
         });
 

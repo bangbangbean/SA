@@ -9,9 +9,11 @@ public class Req {
     public String getId(){
         return id;
     }
+
     public Req(fields fields){
         this.fields = fields;
     }
+
     public fields getFields(){
         return fields;
     }

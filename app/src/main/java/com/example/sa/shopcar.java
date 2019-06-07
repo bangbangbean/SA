@@ -26,5 +26,21 @@ public class shopcar {
         return fields.getShopcar_name();
     }
 
+    public String getfieldsSize(){
+        return fields.getShopcar_size();
+    }
+
+    public String getfieldsColor(){
+        return fields.getShopcar_color();
+    }
+
+    public int getfieldsNum(){
+        return fields.getShopcar_num();
+    }
+
+    public int getfieldsPrice(){
+        return fields.getShopcar_price();
+    }
+
 
 }
