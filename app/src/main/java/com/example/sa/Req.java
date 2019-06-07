@@ -17,8 +17,9 @@ public class Req {
     public fields getFields(){
         return fields;
     }
-    public void setFields(com.example.sa.shopcar shopcar){
-        this.shopcar = shopcar;
+
+    public void setFields(com.example.sa.fields fields){
+        this.fields = fields;
     }
 
 

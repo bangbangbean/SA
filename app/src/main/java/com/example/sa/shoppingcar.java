@@ -12,7 +12,6 @@ import retrofit2.Response;
 
 public class shoppingcar extends AppCompatActivity {
 
-    shopcar shopcar;
     private TextView sellername;
     private  TextView textView8;
     private  TextView textView25;
@@ -33,10 +32,10 @@ public class shoppingcar extends AppCompatActivity {
         //getShopcar();
 
         try {
-            //postinfor();//新增資料
+            postinfor();//新增資料
         } catch (Exception e) {
             textView8.setText(e.toString());
-            Log.e("MainActivity", e.getMessage());//
+            Log.e("shoppingcar", e.getMessage());//
         }
 
         // 2. 透過RetrofitManager取得連線基底

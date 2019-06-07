@@ -5,9 +5,12 @@ public class shopcar {
     private shopcar[] records;
     private String id;
     private fields fields;
+    private String createTime;
 
-    public shopcar(String id){
+    public shopcar(String id, fields fields1, String createTime){
         this.id = id;
+        this.fields =fields1;
+        this.createTime = createTime;
     }
 
     public shopcar[] getRecords() {
@@ -19,8 +22,10 @@ public class shopcar {
     }
 
     public fields getfields(int i){
-        return records[i].fields;
+        return fields;
     }
+
+    public String getCreateTime(){return createTime;}
 
     public String getfieldsName() {
         return fields.getShopcar_name();
