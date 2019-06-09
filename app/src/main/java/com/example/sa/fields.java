@@ -86,11 +86,15 @@ public class fields {
     private String change_color;
     private String change_size;
     private String[] change_transport_method;
-    private String membername;
+    //private String membername;
 
-    public String getMembername() {
-        return membername;
-    }
+
+
+
+
+    //public String getMembername() {
+        //return membername;
+    //}
 
 
     //public String[] getSeller_account() {
@@ -121,6 +125,19 @@ public class fields {
         return change_size;
     }
 
+
+
+
+
+    //private String member_account;
+    private String member_password;
+//    public String getMember_account() {
+//        return member_account;
+//    }
+
+    public String getMember_password() {
+        return member_password;
+    }
     //public String[] getChange_transport_method() {
         //return change_transport_method;
     //}

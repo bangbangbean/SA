@@ -22,6 +22,9 @@ public interface test1<normalgood> {
     @GET("changegood?api_key=keyq0EkjYQRAzfrUN")
     Call<bartergoods1> getChange1();
 
+    @GET("member?api_key=keyE1CwnXgmbsrkG8")
+    Call<login1> getmem();
+
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);
 
