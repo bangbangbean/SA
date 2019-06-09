@@ -32,7 +32,7 @@ public class shoppingcar extends AppCompatActivity {
         //getShopcar();
 
         try {
-            postinfor();//新增資料
+            //postinfor();//新增資料
         } catch (Exception e) {
             textView8.setText(e.toString());
             Log.e("shoppingcar", e.getMessage());//
@@ -66,11 +66,11 @@ public class shoppingcar extends AppCompatActivity {
         });
     }
 
-   public void postinfor() {
-       test1 = RetrofitManager.getInstance().getAPI();
-        Call<shopcar> call = ((test1) test1).postInfor(new Req(new fields("123123", "紅", "L",1,5000)));
-        call.enqueue(new Callback<shopcar>() {
-            @Override
+   //public void postinfor() {
+       //test1 = RetrofitManager.getInstance().getAPI();
+       // Call<shopcar> call = ((test1) test1).postInfor(new Req(new fields("123123", "紅", "L",1,5000)));
+        //call.enqueue(new Callback<shopcar>() {
+           // @Override
             public void onResponse(Call<com.example.sa.shopcar> call, Response<shopcar> response) {
                textView8.setText(response.body().getfieldsName());
                textView20.setText(response.body().getfieldsColor());
@@ -79,7 +79,7 @@ public class shoppingcar extends AppCompatActivity {
                sellername.setText(response.body().getfieldsPrice() + "");
             }
 
-            @Override
+            //@Override
             public void onFailure(Call<shopcar> call, Throwable t) {
 
             textView8.setText(t.getMessage());
@@ -88,9 +88,9 @@ public class shoppingcar extends AppCompatActivity {
                textView29.setText(t.getMessage());
                 sellername.setText(t.getMessage());
             }
-        });
+        //});
 
-    }
+    //}
 
 
 

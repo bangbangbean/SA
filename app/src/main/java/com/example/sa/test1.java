@@ -19,6 +19,9 @@ public interface test1<normalgood> {
     @GET("shopcar?api_key=keyq0EkjYQRAzfrUN")    // 設置一個GET連線，路徑為albums/1
     Call<checkout1> getCheck1();    // 取得的回傳資料用Albums物件接收，連線名稱取為getAlbums
 
+    @GET("changegood?api_key=keyq0EkjYQRAzfrUN")
+    Call<bartergoods1> getChange1();
+
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);
 

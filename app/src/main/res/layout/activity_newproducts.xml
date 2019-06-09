@@ -126,7 +126,7 @@
 
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/transportmethod"
                     android:layout_width="8dp"
                     android:layout_height="21dp"
                     android:layout_marginStart="8dp"
@@ -140,7 +140,7 @@
                     app:srcCompat="@drawable/s1" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/method"
                     android:layout_width="277dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
@@ -199,7 +199,7 @@
 
                 <ImageView
 
-                    android:id="@+id/imageView10"
+                    android:id="@+id/changearea"
                     android:layout_width="10dp"
                     android:layout_height="23dp"
                     android:layout_marginStart="8dp"
@@ -212,7 +212,7 @@
                     app:srcCompat="@drawable/s3" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/area"
 
                     android:layout_width="277dp"
                     android:layout_height="wrap_content"
