@@ -86,11 +86,11 @@ public class fields {
     private String change_color;
     private String change_size;
     private String[] change_transport_method;
-    private String membername;
+    //private String membername;
 
-    public String getMembername() {
-        return membername;
-    }
+    //public String getMembername() {
+        //return membername;
+    //}
 
 
     //public String[] getSeller_account() {
