@@ -4,28 +4,6 @@ import java.util.List;
 
 public class NormalGood {
 
-    /**
-     * normal_product_stocks : 2
-     * status : 上架
-     * normal_product_remaning : 1
-     * seller_account : ["recg2Dh3EgFtTffIH"]
-     * area : 台北
-     * Order_system : ["recCMVzr59JGBlyK6"]
-     * normal_product_number : 1
-     * upadte_date : 2019-05-09
-     * prepare_time : 1-2天
-     * shopcar : ["recuqibPucYFTW0Da"]
-     * normal_product_class : ["recp07wFrrTkCSG8B"]
-     * transport_way : ["店到店","面交"]
-     * normal_product_narrative : 好穿
-     * normal_product_name : 鞋子
-     * Charging_method : ["信用卡"]
-     * normal_product_color : 紅
-     * normal_product_price : 5000
-     * normal_product_size : US11
-     * member_name : ["簡豪廷"]
-     */
-
     private String normal_product_stocks;
     private String status;
     private String normal_product_remaning;

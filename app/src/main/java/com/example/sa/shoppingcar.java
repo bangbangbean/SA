@@ -14,25 +14,10 @@ import retrofit2.Response;
 
 public class shoppingcar extends AppCompatActivity {
 
-    private  TextView textView8;
-    private  TextView sellername;
-    private  TextView price1;
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoppingcar);
-
-        textView8 = (TextView) findViewById(R.id.goodname1);
-        sellername = (TextView) findViewById(R.id.sellername);
-        price1 = (TextView) findViewById(R.id.price1);
-
-
-        // 2. 透過RetrofitManager取得連線基底
-
     }
 
 
