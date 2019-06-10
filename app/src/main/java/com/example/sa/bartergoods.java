@@ -39,19 +39,16 @@ public class bartergoods extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        selleraccount = (TextView) findViewById(R.id.selleraccount);
-        changearea = (TextView) findViewById(R.id.changearea);
-        name = (TextView) findViewById(R.id.name);
-        narrative = (TextView) findViewById(R.id.narrative);
-        price = (TextView) findViewById(R.id.price);
-        color = (TextView) findViewById(R.id.color);
-        size = (TextView) findViewById(R.id.size);
-        method = (TextView) findViewById(R.id.method);
-        area = (TextView) findViewById(R.id.area);
+//        selleraccount = (TextView) findViewById(R.id.selleraccount);
+//        changearea = (TextView) findViewById(R.id.changearea);
+//        name = (TextView) findViewById(R.id.name);
+//        narrative = (TextView) findViewById(R.id.narrative);
+//        price = (TextView) findViewById(R.id.price);
+//        color = (TextView) findViewById(R.id.color);
+//        size = (TextView) findViewById(R.id.size);
+//        method = (TextView) findViewById(R.id.method);
+//        area = (TextView) findViewById(R.id.area);
         getChange1();
-
-
-
     }
     public void getChange1(){
         test1 = RetrofitManager.getInstance().getAPI();

@@ -181,8 +181,26 @@
     <string name="checkout_j">訂單金額:</string>
     <string name="checkout_k">付款詳情</string>
     <string name="checkout_l">付款方式:</string>
-
     <string name="checkout_bt">確認購買</string>
+    <string name="checkout_m">商品總金額</string>
+    <string name="checkout_n">運費總金額</string>
+    <string name="checkout_o">總付款金額</string>
+    <string-array name="howpay">
+        <item>選擇付款方式</item>
+        <item>信用卡</item>
+        <item>銀行轉帳</item>
+        <item>貨到付款</item>
+    </string-array>
+
+    <string-array name="howsend">
+        <item>選擇寄送方式</item>
+        <item>超商取貨</item>
+        <item>宅配</item>
+        <item>店到店</item>
+    </string-array>
+
+
+
 
 
     ---------------------------------------------------------------------------
@@ -194,7 +212,6 @@
     <string name="shopcar_good3p">NTD:1200</string>
     <string name="shopcar_good1size">規格:</string>
     <string name="shopcar_good2size">規格:</string>
-    <string name="shopcar_bt">確定購買</string>
 
     <string name="title_activity_realexchengehome">realexchengehome</string>
 

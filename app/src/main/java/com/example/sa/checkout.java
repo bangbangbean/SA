@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import retrofit2.Call;
@@ -21,7 +24,10 @@ public class checkout extends AppCompatActivity {
     private TextView size;
     private TextView price;
     private TextView pricetotal;
+    private TextView pricetotal1;
+    private TextView pricesend;
     private int total=0;
+    private String str;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,14 +39,41 @@ public class checkout extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        final Spinner spinner = (Spinner) findViewById(R.id.howsend);
+        str = (String) spinner.getSelectedItem();
+        pricesend = (TextView) findViewById(R.id.pricesend);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+                //拿到被选择项的值
+                str = (String) spinner.getSelectedItem();
+                //pricesend.setText(str);
+                if (str.equals("選擇寄送方式")){ pricesend.setText("0"); }
+                else if (str.equals("超商取貨")){ pricesend.setText("60"); }
+                else if (str.equals("宅配")){ pricesend.setText(120+""); }
+                else if (str.equals("店到店")){ pricesend.setText(30+""); }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // TODO Auto-generated method stub
+            }
+        });
+
+        Spinner spinner1 = (Spinner) findViewById(R.id.howbuy);
+
         productname = (TextView) findViewById(R.id.productname);
         num = (TextView) findViewById(R.id.num);
         size = (TextView) findViewById(R.id.size);
         price = (TextView) findViewById(R.id.price);
         pricetotal = (TextView) findViewById(R.id.pricetotal);
+        pricetotal1 = (TextView) findViewById(R.id.pricetotal1);
         //getCheck1();
 
     }
+
+
 
     public void getCheck1(){
         test1 = RetrofitManager.getInstance().getAPI();
@@ -61,6 +94,7 @@ public class checkout extends AppCompatActivity {
                 int dEt2 = Integer.valueOf(price.getText().toString());
                 total = dEt1 * dEt2;
                 pricetotal.setText(Integer.toString(total));
+                pricetotal1.setText(Integer.toString(total));
             }
 
             @Override
