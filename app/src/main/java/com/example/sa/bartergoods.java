@@ -39,15 +39,15 @@ public class bartergoods extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-//        selleraccount = (TextView) findViewById(R.id.selleraccount);
-//        changearea = (TextView) findViewById(R.id.changearea);
-//        name = (TextView) findViewById(R.id.name);
-//        narrative = (TextView) findViewById(R.id.narrative);
-//        price = (TextView) findViewById(R.id.price);
-//        color = (TextView) findViewById(R.id.color);
-//        size = (TextView) findViewById(R.id.size);
-//        method = (TextView) findViewById(R.id.method);
-//        area = (TextView) findViewById(R.id.area);
+        selleraccount = (TextView) findViewById(R.id.selleraccount);
+        changearea = (TextView) findViewById(R.id.changearea);
+        name = (TextView) findViewById(R.id.name);
+        narrative = (TextView) findViewById(R.id.narrative);
+        price = (TextView) findViewById(R.id.price);
+        color = (TextView) findViewById(R.id.color);
+        size = (TextView) findViewById(R.id.size);
+        method = (TextView) findViewById(R.id.method);
+        area = (TextView) findViewById(R.id.area);
         getChange1();
     }
     public void getChange1(){
@@ -60,25 +60,27 @@ public class bartergoods extends AppCompatActivity {
         call.enqueue(new Callback<bartergoods1>() {
             @Override
             public void onResponse(Call<com.example.sa.bartergoods1> call, Response<bartergoods1> response) {
-                //selleraccount.setText(response.body().getfields(0).getMembername());
+                selleraccount.setText(response.body().getfields(0).getSeller_account().get(0));
 //                changearea.setText(response.body().getfields(0).getChange_area());
 //                name.setText(response.body().getfields(0).getChange_product_name());
 //                narrative.setText(response.body().getfields(0).getChange_product_narrative());
 //                price.setText(response.body().getfields(0).getChange_product_price()+"");
 //                color.setText(response.body().getfields(0).getChange_color());
 //                size.setText(response.body().getfields(0).getChange_size());
+//                method.setText(response.body().getfields(0).getChange_transport_method().get(0));
 //                area.setText(response.body().getfields(0).getChange_area());
             }
 
             @Override
             public void onFailure(Call<com.example.sa.bartergoods1> call, Throwable t) {
-                //selleraccount.setText(t.getMessage());
+                selleraccount.setText(t.getMessage());
                 changearea.setText(t.getMessage());
                 name.setText(t.getMessage());
                 narrative.setText(t.getMessage());
                 price.setText(t.getMessage());
                 color.setText(t.getMessage());
                 size.setText(t.getMessage());
+                method.setText(t.getMessage());
                 area.setText(t.getMessage());
             }
         });
