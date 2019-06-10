@@ -38,7 +38,7 @@ public class checkout extends AppCompatActivity {
         size = (TextView) findViewById(R.id.size);
         price = (TextView) findViewById(R.id.price);
         pricetotal = (TextView) findViewById(R.id.pricetotal);
-        getCheck1();
+        //getCheck1();
 
     }
 
@@ -52,10 +52,10 @@ public class checkout extends AppCompatActivity {
         call.enqueue(new Callback<checkout1>() {
             @Override
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
-                productname.setText(response.body().getfields(0).getShopcar_name());
-                num.setText(response.body().getfields(0).getShopcar_num()+"");
-                size.setText(response.body().getfields(0).getShopcar_size());
-                price.setText(response.body().getfields(0).getShopcar_price()+"");
+                productname.setText(response.body().getfields(0).getShopcar_name().get(0));
+                //num.setText(response.body().getfields(0).getShopcar_num()+"");
+                //size.setText(response.body().getfields(0).getShopcar_size());
+                //price.setText(response.body().getfields(0).getShopcar_price()+"");
                 //計算訂單總價數量X單價
                 int dEt1 = Integer.valueOf(num.getText().toString());
                 int dEt2 = Integer.valueOf(price.getText().toString());

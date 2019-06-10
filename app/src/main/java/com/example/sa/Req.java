@@ -1,26 +1,19 @@
 package com.example.sa;
 
-public class Req {
+public class Req<T> {
 
+    private T fields;
+    private boolean typecast = true;
 
-    private shopcar shopcar;
-    private fields fields;
-
-
-    public Req(fields fields){
+    public Req(T fields) {
         this.fields = fields;
     }
 
-    public fields getFields(){
+    public T getFields() {
         return fields;
     }
 
-    public void setFields(com.example.sa.fields fields){
+    public void setFields(T fields) {
         this.fields = fields;
     }
-
-
-
-
-
 }

@@ -15,6 +15,7 @@ public class home extends AppCompatActivity {
     private Button exchangebt;
     private ImageButton productbt;
     private ImageButton productbt2;
+    private ImageButton shopcar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +50,15 @@ public class home extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent= new Intent(home.this, newproducts.class);
+                startActivity(intent);
+            }
+        });
+        shopcar = (ImageButton) findViewById(R.id.shopcar);
+        shopcar.setOnClickListener(new View.OnClickListener()
+        {
+            public void onClick(View v)
+            {
+                Intent intent= new Intent(home.this, shoppingcar.class);
                 startActivity(intent);
             }
         });

@@ -13,8 +13,8 @@ public interface test1<normalgood> {
     // POST網址     https://jsonplaceholder.typicode.com/albums
     // ...typicode.com/[這裡就是API的路徑]
 
-    @GET("normalgood?api_key=keyq0EkjYQRAzfrUN")    // 設置一個GET連線，路徑為albums/1
-    Call<shopcar> getShopcar();    // 取得的回傳資料用Albums物件接收，連線名稱取為getAlbums
+    @GET("normalgood/{record_id}?api_key=keyq0EkjYQRAzfrUN")    // 設置一個GET連線，路徑為albums/1
+    Call<Res<NormalGood>> getNormalGoodId(@Path("record_id") String recordId);    // 取得的回傳資料用Albums物件接收，連線名稱取為getAlbums
 
     @GET("shopcar?api_key=keyq0EkjYQRAzfrUN")    // 設置一個GET連線，路徑為albums/1
     Call<checkout1> getCheck1();    // 取得的回傳資料用Albums物件接收，連線名稱取為getAlbums
@@ -27,5 +27,5 @@ public interface test1<normalgood> {
             "Accept: application/json; charset=utf-8",
             "Content-Type: application/json; charset=utf-8"
     })
-    Call<shopcar> postInfor(@Body Req fields);
+    Call<Res<ShopCar>> addAShopCar(@Body Req<ShopCar> data);
 }
