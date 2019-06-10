@@ -3,7 +3,7 @@ package com.example.sa;
 public class login1 {
     private login1[] records;
     private String id;
-    private fields fields;
+    private ShopCar fields;
 
     public login1(String id){
         this.id = id;
@@ -13,5 +13,5 @@ public class login1 {
     public String getId(int i){
         return records[i].id;
     }
-    public fields getfields(int i){return records[i].fields;}
+    public ShopCar getfields(int i){return records[i].fields;}
 }

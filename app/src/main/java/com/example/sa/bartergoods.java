@@ -64,13 +64,13 @@ public class bartergoods extends AppCompatActivity {
             @Override
             public void onResponse(Call<com.example.sa.bartergoods1> call, Response<bartergoods1> response) {
                 //selleraccount.setText(response.body().getfields(0).getMembername());
-                changearea.setText(response.body().getfields(0).getChange_area());
-                name.setText(response.body().getfields(0).getChange_product_name());
-                narrative.setText(response.body().getfields(0).getChange_product_narrative());
-                price.setText(response.body().getfields(0).getChange_product_price()+"");
-                color.setText(response.body().getfields(0).getChange_color());
-                size.setText(response.body().getfields(0).getChange_size());
-                area.setText(response.body().getfields(0).getChange_area());
+//                changearea.setText(response.body().getfields(0).getChange_area());
+//                name.setText(response.body().getfields(0).getChange_product_name());
+//                narrative.setText(response.body().getfields(0).getChange_product_narrative());
+//                price.setText(response.body().getfields(0).getChange_product_price()+"");
+//                color.setText(response.body().getfields(0).getChange_color());
+//                size.setText(response.body().getfields(0).getChange_size());
+//                area.setText(response.body().getfields(0).getChange_area());
             }
 
             @Override

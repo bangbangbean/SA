@@ -3,7 +3,7 @@ package com.example.sa;
 public class bartergoods1 {
     private bartergoods1 [] records;
     private String id;
-    private fields fields;
+    private ShopCar fields;
 
     public bartergoods1(String id) { this.id = id; }
 
@@ -11,5 +11,5 @@ public class bartergoods1 {
     public String getId(int i){
         return records[i].id;
     }
-    public fields getfields(int i){return records[i].fields;}
+    public ShopCar getfields(int i){return records[i].fields;}
 }

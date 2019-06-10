@@ -85,7 +85,7 @@ public class login extends AppCompatActivity {
             call.enqueue(new Callback<login1>() {
                 @Override
                 public void onResponse(Call<com.example.sa.login1> call, Response<login1> response) {
-                    test.setText(response.body().getfields(0).getMember_password());
+                    //test.setText(response.body().getfields(0).getMember_password());
 
                 }
 
