@@ -49,7 +49,7 @@ public class checkout extends AppCompatActivity {
                                        int position, long id) {
                 //拿到被选择项的值
                 str = (String) spinner.getSelectedItem();
-                //pricesend.setText(str);
+                pricesend.setText(str);
                 if (str.equals("選擇寄送方式")){ pricesend.setText("0"); }
                 else if (str.equals("超商取貨")){ pricesend.setText("60"); }
                 else if (str.equals("宅配")){ pricesend.setText(120+""); }
@@ -70,10 +70,7 @@ public class checkout extends AppCompatActivity {
         pricetotal = (TextView) findViewById(R.id.pricetotal);
         pricetotal1 = (TextView) findViewById(R.id.pricetotal1);
         //getCheck1();
-
     }
-
-
 
     public void getCheck1(){
         test1 = RetrofitManager.getInstance().getAPI();
@@ -86,9 +83,9 @@ public class checkout extends AppCompatActivity {
             @Override
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
                 productname.setText(response.body().getfields(0).getShopcar_name().get(0));
-                //num.setText(response.body().getfields(0).getShopcar_num()+"");
+                num.setText(response.body().getfields(0).getShopcar_num()+"");
                 //size.setText(response.body().getfields(0).getShopcar_size());
-                //price.setText(response.body().getfields(0).getShopcar_price()+"");
+                price.setText(response.body().getfields(0).getShopcar_price()+"");
                 //計算訂單總價數量X單價
                 int dEt1 = Integer.valueOf(num.getText().toString());
                 int dEt2 = Integer.valueOf(price.getText().toString());
