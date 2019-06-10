@@ -61,7 +61,6 @@ public class newproducts extends AppCompatActivity {
             @Override
             public void onResponse(Call<Res<NormalGood>> call, Response<Res<NormalGood>> response) {
                 number.add(response.body().getFields().getNormal_product_number() + "");
-
                 postinfor();//新增資料
             }
 

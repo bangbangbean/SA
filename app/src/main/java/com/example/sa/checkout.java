@@ -10,6 +10,9 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -26,8 +29,11 @@ public class checkout extends AppCompatActivity {
     private TextView pricetotal;
     private TextView pricetotal1;
     private TextView pricesend;
+    private TextView finalprice;
     private int total=0;
+    private int finaltotal=0;
     private String str;
+    private List<String> number = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,10 +56,26 @@ public class checkout extends AppCompatActivity {
                 //拿到被选择项的值
                 str = (String) spinner.getSelectedItem();
                 pricesend.setText(str);
-                if (str.equals("選擇寄送方式")){ pricesend.setText("0"); }
-                else if (str.equals("超商取貨")){ pricesend.setText("60"); }
-                else if (str.equals("宅配")){ pricesend.setText(120+""); }
-                else if (str.equals("店到店")){ pricesend.setText(30+""); }
+                if (str.equals("選擇寄送方式")){
+                    pricesend.setText("0");
+                    int dEt1 = Integer.valueOf(pricesend.getText().toString());
+                    finalprice.setText(dEt1+total+"");
+                }
+                else if (str.equals("超商取貨")){
+                    pricesend.setText("60");
+                    int dEt1 = Integer.valueOf(pricesend.getText().toString());
+                    finalprice.setText(dEt1+total+"");
+                }
+                else if (str.equals("宅配")){
+                    pricesend.setText(120+"");
+                    int dEt1 = Integer.valueOf(pricesend.getText().toString());
+                    finalprice.setText(dEt1+total+"");
+                }
+                else if (str.equals("店到店")){
+                    pricesend.setText(30+"");
+                    int dEt1 = Integer.valueOf(pricesend.getText().toString());
+                    finalprice.setText(dEt1+total+"");
+                }
             }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
@@ -69,7 +91,8 @@ public class checkout extends AppCompatActivity {
         price = (TextView) findViewById(R.id.price);
         pricetotal = (TextView) findViewById(R.id.pricetotal);
         pricetotal1 = (TextView) findViewById(R.id.pricetotal1);
-        //getCheck1();
+        finalprice = (TextView) findViewById(R.id.finalprice);
+        getCheck1();
     }
 
     public void getCheck1(){
@@ -77,21 +100,21 @@ public class checkout extends AppCompatActivity {
 
         // 3. 建立連線的Call，此處設置call為myAPIService中的getAlbums()連線
         Call<checkout1> call = ((test1) test1).getCheck1();
-
         // 4. 執行call
         call.enqueue(new Callback<checkout1>() {
             @Override
             public void onResponse(Call<com.example.sa.checkout1> call, Response<checkout1> response) {
                 productname.setText(response.body().getfields(0).getShopcar_name().get(0));
                 num.setText(response.body().getfields(0).getShopcar_num()+"");
-                //size.setText(response.body().getfields(0).getShopcar_size());
-                price.setText(response.body().getfields(0).getShopcar_price()+"");
+                size.setText(response.body().getfields(0).getShopcar_size().get(0));
+                price.setText(response.body().getfields(0).getShopcar_price().get(0)+"");
                 //計算訂單總價數量X單價
                 int dEt1 = Integer.valueOf(num.getText().toString());
                 int dEt2 = Integer.valueOf(price.getText().toString());
                 total = dEt1 * dEt2;
                 pricetotal.setText(Integer.toString(total));
                 pricetotal1.setText(Integer.toString(total));
+                finalprice.setText(Integer.toString(total));
             }
 
             @Override
