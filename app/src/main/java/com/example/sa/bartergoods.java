@@ -28,6 +28,7 @@ public class bartergoods extends AppCompatActivity {
     private TextView area;
     private TextView changeproduct;
     private TextView pricerange;
+    private TextView series;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,7 @@ public class bartergoods extends AppCompatActivity {
         area = (TextView) findViewById(R.id.area);
         changeproduct = (TextView) findViewById(R.id.changeproduct);
         pricerange = (TextView) findViewById(R.id.pricerange);
+        series = (TextView) findViewById(R.id.textView2);
         getChange1();
     }
     public void getChange1(){
@@ -70,6 +72,7 @@ public class bartergoods extends AppCompatActivity {
                 area.setText(response.body().getfields(0).getChange_area());
                 changeproduct.setText(response.body().getfields(0).getProductclass().get(0));
                 pricerange.setText(response.body().getfields(0).getRange_you_want_to_change());
+                series.setText(response.body().getfields(0).getProduct_series());
             }
 
             @Override
@@ -82,6 +85,7 @@ public class bartergoods extends AppCompatActivity {
                 area.setText(t.getMessage());
                 changeproduct.setText(t.getMessage());
                 pricerange.setText(t.getMessage());
+                series.setText(t.getMessage());
             }
         });
     }

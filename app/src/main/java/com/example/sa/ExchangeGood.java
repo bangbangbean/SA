@@ -16,10 +16,8 @@ public class ExchangeGood {
     private List<String> membername;
     private List<String> change_product_class;
     private String range_you_want_to_change;
-
-
-
     private List<String> productclass;
+    private String product_series;
 
     public List<String> getSeller_account() {
         return seller_account;
@@ -57,7 +55,7 @@ public class ExchangeGood {
 
     public List<String> getProductclass() { return productclass; }
 
-
+    public String getProduct_series() { return product_series; }
 
 
 }
