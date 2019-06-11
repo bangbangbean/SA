@@ -23,7 +23,8 @@ public interface test1<normalgood> {
     @GET("changegood?api_key=keyq0EkjYQRAzfrUN")
     Call<bartergoods1> getChange1();
 
-
+    @POST("member?api_key=keyq0EkjYQRAzfrUN")
+    Call<Res<Member>> addAMember(@Body Req<Member> data);
 
     @GET("member?api_key=keyq0EkjYQRAzfrUN&view=Grid%20view")
     Call<ListRes<Member>> getmem();

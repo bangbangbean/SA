@@ -19,7 +19,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.292" />
 
     <EditText
         android:id="@+id/username"
@@ -34,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <EditText
         android:id="@+id/userpasswordcheck"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.406" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <TextView
         android:id="@+id/registertitle"
@@ -107,10 +107,10 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.178" />
 
     <TextView
         android:id="@+id/warningtext"
@@ -127,10 +127,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/registertitle"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.667" />
+        app:layout_constraintVertical_bias="0.679" />
 
     <TextView
         android:id="@+id/test123"
@@ -145,27 +144,28 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.456" />
+        app:layout_constraintVertical_bias="0.898" />
 
     <TextView
         android:id="@+id/test2"
-        android:layout_width="210dp"
-        android:layout_height="257dp"
+        android:layout_width="256dp"
+        android:layout_height="57dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:textSize="30sp"
+        android:textColor="@color/red"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registertitle"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

@@ -45,8 +45,8 @@
     --------------------------------------------------------------------------
     //註冊頁面
     <string name="registered_name">註冊</string>
-    <string name="registered_username">輸入您的名稱</string>
-    <string name="registered_useradress">電子信箱</string>
+    <string name="registered_username">輸入您的帳號</string>
+    <string name="registered_useradress">電話號碼</string>
     <string name="registered_userpassword">密碼(至少6位英數)</string>
     <string name="registered_userpasswordcheck">請您在輸入一次密碼</string>
     <string name="registered_warngingtext">按下註冊後代表我同意\n服務條款 以及 隱私權條款</string>
