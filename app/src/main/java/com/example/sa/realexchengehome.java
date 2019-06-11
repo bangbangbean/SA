@@ -100,7 +100,7 @@ public class realexchengehome extends AppCompatActivity
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(realexchengehome.this, exchangehome.class);
+                Intent intent= new Intent(realexchengehome.this, bartergoods.class);
                 startActivity(intent);
             }
         });
