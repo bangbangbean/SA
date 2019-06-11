@@ -14,7 +14,12 @@ public class ExchangeGood {
     private List<String> change_transport_method;
     private String change_area;
     private List<String> membername;
+    private List<String> change_product_class;
+    private String range_you_want_to_change;
 
+
+
+    private List<String> productclass;
 
     public List<String> getSeller_account() {
         return seller_account;
@@ -46,6 +51,11 @@ public class ExchangeGood {
 
     public List<String> getMembername() { return membername; }
 
+    public List<String> getChange_product_class() { return change_product_class; }
+
+    public String getRange_you_want_to_change() { return range_you_want_to_change; }
+
+    public List<String> getProductclass() { return productclass; }
 
 
 
