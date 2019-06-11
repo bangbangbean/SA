@@ -60,15 +60,15 @@ public class bartergoods extends AppCompatActivity {
         call.enqueue(new Callback<bartergoods1>() {
             @Override
             public void onResponse(Call<com.example.sa.bartergoods1> call, Response<bartergoods1> response) {
-                selleraccount.setText(response.body().getfields(0).getSeller_account().get(0));
-//                changearea.setText(response.body().getfields(0).getChange_area());
-//                name.setText(response.body().getfields(0).getChange_product_name());
-//                narrative.setText(response.body().getfields(0).getChange_product_narrative());
-//                price.setText(response.body().getfields(0).getChange_product_price()+"");
-//                color.setText(response.body().getfields(0).getChange_color());
-//                size.setText(response.body().getfields(0).getChange_size());
-//                method.setText(response.body().getfields(0).getChange_transport_method().get(0));
-//                area.setText(response.body().getfields(0).getChange_area());
+                selleraccount.setText(response.body().getfields(0).getMembername().get(0));
+                changearea.setText(response.body().getfields(0).getChange_area());
+                name.setText(response.body().getfields(0).getChange_product_name());
+                narrative.setText(response.body().getfields(0).getChange_product_narrative());
+                price.setText(response.body().getfields(0).getChange_product_price()+"");
+                color.setText(response.body().getfields(0).getChange_color());
+                size.setText(response.body().getfields(0).getChange_size());
+                method.setText(response.body().getfields(0).getChange_transport_method().get(0));
+                area.setText(response.body().getfields(0).getChange_area());
             }
 
             @Override

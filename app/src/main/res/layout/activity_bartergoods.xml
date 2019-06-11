@@ -92,12 +92,14 @@
                         android:id="@+id/selleraccount"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/changearea"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:textColor="@color/black"/>
 
                 </LinearLayout>
@@ -106,7 +108,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="78dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -115,25 +117,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bartergoods_b"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
-                <TextView
-                    android:id="@+id/space"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
 
                 <TextView
                     android:id="@+id/productnarrative"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/bartergoods_c"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/narrative"
