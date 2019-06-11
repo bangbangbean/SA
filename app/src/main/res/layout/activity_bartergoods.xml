@@ -108,7 +108,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="177dp"
+                android:layout_height="213dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -116,7 +116,7 @@
                     android:id="@+id/textView29"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@drawable/textview_border3"/>
+                    android:background="@drawable/textview_border3" />
 
                 <TextView
                     android:id="@+id/productname"
@@ -147,15 +147,15 @@
 
                 <TextView
                     android:id="@+id/narrative"
-                    android:layout_width="207dp"
-                    android:layout_height="99dp"
+                    android:layout_width="315dp"
+                    android:layout_height="131dp"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/lightgray"/>
+                    android:background="@color/lightgray" />
 
             </LinearLayout>
 
