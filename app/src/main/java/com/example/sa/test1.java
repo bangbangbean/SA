@@ -12,7 +12,6 @@ import retrofit2.http.Path;
 public interface test1<normalgood> {
     // 測試網站      https://jsonplaceholder.typicode.com/
     // GET網址      https://jsonplaceholder.typicode.com/albums/1
-    // POST網址     https://jsonplaceholder.typicode.com/albums
     // ...typicode.com/[這裡就是API的路徑]
 
     @GET("normalgood/{record_id}?api_key=keyq0EkjYQRAzfrUN")    // 設置一個GET連線，路徑為albums/1
@@ -24,8 +23,10 @@ public interface test1<normalgood> {
     @GET("changegood?api_key=keyq0EkjYQRAzfrUN")
     Call<bartergoods1> getChange1();
 
-    @GET("member?api_key=keyE1CwnXgmbsrkG8")
-    Call<login1> getmem();
+
+
+    @GET("member?api_key=keyq0EkjYQRAzfrUN&view=Grid%20view")
+    Call<ListRes<Member>> getmem();
 
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);

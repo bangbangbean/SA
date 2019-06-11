@@ -30,7 +30,7 @@
         <activity android:name=".dickshop" />
         <activity android:name=".home" />
         <activity android:name=".shoppingcar" />
-        <activity android:name=".bartergoods" />
+        <activity android:name=".startpage" />
         <activity android:name=".newproducts" />
         <activity android:name=".certification" />
         <activity android:name=".resetpassword" />
@@ -38,7 +38,7 @@
         <activity android:name=".registered" />
         <activity android:name=".login" />
 
-        <activity android:name=".startpage">
+        <activity android:name=".bartergoods">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

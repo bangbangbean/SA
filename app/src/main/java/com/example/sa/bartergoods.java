@@ -26,6 +26,9 @@ public class bartergoods extends AppCompatActivity {
     private TextView size;
     private TextView method;
     private TextView area;
+    private TextView changeproduct;
+    private TextView pricerange;
+    private TextView series;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +46,12 @@ public class bartergoods extends AppCompatActivity {
         changearea = (TextView) findViewById(R.id.changearea);
         name = (TextView) findViewById(R.id.name);
         narrative = (TextView) findViewById(R.id.narrative);
-        price = (TextView) findViewById(R.id.price);
-        color = (TextView) findViewById(R.id.color);
         size = (TextView) findViewById(R.id.size);
         method = (TextView) findViewById(R.id.method);
         area = (TextView) findViewById(R.id.area);
+        changeproduct = (TextView) findViewById(R.id.changeproduct);
+        pricerange = (TextView) findViewById(R.id.pricerange);
+        series = (TextView) findViewById(R.id.textView2);
         getChange1();
     }
     public void getChange1(){
@@ -64,11 +68,11 @@ public class bartergoods extends AppCompatActivity {
                 changearea.setText(response.body().getfields(0).getChange_area());
                 name.setText(response.body().getfields(0).getChange_product_name());
                 narrative.setText(response.body().getfields(0).getChange_product_narrative());
-                price.setText(response.body().getfields(0).getChange_product_price()+"");
-                color.setText(response.body().getfields(0).getChange_color());
-                size.setText(response.body().getfields(0).getChange_size());
                 method.setText(response.body().getfields(0).getChange_transport_method().get(0));
                 area.setText(response.body().getfields(0).getChange_area());
+                changeproduct.setText(response.body().getfields(0).getProductclass().get(0));
+                pricerange.setText(response.body().getfields(0).getRange_you_want_to_change());
+                series.setText(response.body().getfields(0).getChange_product_name());
             }
 
             @Override
@@ -77,11 +81,11 @@ public class bartergoods extends AppCompatActivity {
                 changearea.setText(t.getMessage());
                 name.setText(t.getMessage());
                 narrative.setText(t.getMessage());
-                price.setText(t.getMessage());
-                color.setText(t.getMessage());
-                size.setText(t.getMessage());
                 method.setText(t.getMessage());
                 area.setText(t.getMessage());
+                changeproduct.setText(t.getMessage());
+                pricerange.setText(t.getMessage());
+                series.setText(t.getMessage());
             }
         });
     }
