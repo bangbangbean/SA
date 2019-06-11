@@ -17,7 +17,7 @@ public class NormalGood {
     private int normal_product_price;
     private String normal_product_size;
     private List<String> seller_account;
-    private List<String> Order_system;
+    private String Order_system;
     private List<String> shopcar;
     private List<String> normal_product_class;
     private List<String> transport_way;
@@ -128,11 +128,11 @@ public class NormalGood {
         this.seller_account = seller_account;
     }
 
-    public List<String> getOrder_system() {
+    public String getOrder_system() {
         return Order_system;
     }
 
-    public void setOrder_system(List<String> Order_system) {
+    public void setOrder_system(String Order_system) {
         this.Order_system = Order_system;
     }
 

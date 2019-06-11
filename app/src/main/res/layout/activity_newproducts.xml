@@ -6,15 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".newproducts">
 
+    >
+
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="0dp"
         android:layout_height="60dp"
-        android:background="@color/red"
+        android:textSize="25dp"
         android:gravity="center"
-        android:text="簡約感細條夾腳拖鞋"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
+        android:background="@color/red"
+
+
+
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,87 +65,172 @@
                 android:layout_width="420dp"
                 android:layout_height="293dp"
                 android:layout_weight="1"
-                android:background="@drawable/textview_border2"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/newproduct1" />
+                app:srcCompat="@drawable/s4" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="61dp"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="15dp"
-                    android:layout_height="50dp"
+                    android:layout_width="29dp"
+                    android:layout_height="48dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
 
+                    app:srcCompat="@drawable/a5" />
 
-                    app:srcCompat="@drawable/huang" />
-
-                <TextView
-                    android:id="@+id/textView1"
-                    android:layout_width="280dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
+                <LinearLayout
+                    android:layout_width="318dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:orientation="vertical">
 
-                    android:text="@string/newproducts_b"
-                    android:textColor="@color/black"
-                    tools:ignore="NotSibling" />
+                    <TextView
+                        android:id="@+id/selleraccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/changearea"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/TextView2"
-                android:layout_width="415dp"
-                android:layout_height="90dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginBottom="8dp"
-                android:layout_weight="3"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
-                android:text="@string/newproducts_a"
-                android:textColor="@color/black"
-                android:textSize="12sp"
-                tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bartergoods_b"
+                    android:textColor="@color/black"/>
 
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/productnarrative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bartergoods_c"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/narrative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productprice"
+                    android:layout_width="146dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/bartergoods_d"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="357dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productcolor"
+                    android:layout_width="19dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/bartergoods_e"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="343dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/productsize"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/bartergoods_f"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="355dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/black" />
+            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-
                 android:orientation="horizontal">
-
 
                 <ImageView
                     android:id="@+id/transportmethod"
                     android:layout_width="8dp"
-                    android:layout_height="21dp"
+                    android:layout_height="25dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-
 
 
                     app:srcCompat="@drawable/s1" />
 
                 <TextView
                     android:id="@+id/method"
-                    android:layout_width="277dp"
+                    android:layout_width="326dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
@@ -149,8 +238,6 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-
-                    android:text="@string/newproducts_c"
                     android:textColor="@color/black" />
 
             </LinearLayout>
@@ -162,8 +249,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-
-                    android:id="@+id/imageView9"
+                    android:id="@+id/preparetime"
                     android:layout_width="8dp"
                     android:layout_height="25dp"
                     android:layout_marginStart="8dp"
@@ -176,9 +262,8 @@
                     app:srcCompat="@drawable/s2" />
 
                 <TextView
-                    android:id="@+id/textView4"
-
-                    android:layout_width="277dp"
+                    android:id="@+id/time"
+                    android:layout_width="326dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
@@ -186,7 +271,6 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:text="@string/newproducts_d"
                     android:textColor="@color/black" />
 
             </LinearLayout>
@@ -197,9 +281,20 @@
 
                 android:orientation="horizontal">
 
-                <ImageView
 
-                    android:id="@+id/changearea"
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/changeplace"
                     android:layout_width="10dp"
                     android:layout_height="23dp"
                     android:layout_marginStart="8dp"
@@ -213,8 +308,7 @@
 
                 <TextView
                     android:id="@+id/area"
-
-                    android:layout_width="277dp"
+                    android:layout_width="326dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
@@ -222,15 +316,14 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
-                    android:text="@string/newproducts_e"
                     android:textColor="@color/black" />
 
             </LinearLayout>
 
             <TextView
                 android:id="@+id/TextView9"
-                android:layout_width="415dp"
-                android:layout_height="25dp"
+                android:layout_width="414dp"
+                android:layout_height="27dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="11dp"
@@ -238,7 +331,6 @@
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
                 android:layout_weight="3"
-
                 android:text="@string/newproducts_f"
                 android:textColor="@color/black"
                 android:textSize="12sp"
@@ -251,10 +343,9 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="190dp"
-                    android:layout_height="125dp"
+                <ImageView android:id="@+id/imageView11"
+                    android:layout_width="188dp"
+                    android:layout_height="126dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
@@ -262,19 +353,17 @@
                     android:layout_weight="1"
 
 
-
-                    app:srcCompat="@drawable/s4" />
+                    app:srcCompat="@drawable/a4" />
 
                 <ImageView
                     android:id="@+id/imageView12"
-                    android:layout_width="190dp"
-                    android:layout_height="125dp"
+                    android:layout_width="188dp"
+                    android:layout_height="126dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-
 
 
                     app:srcCompat="@drawable/s5" />
@@ -282,12 +371,12 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/functionlist_shopbt"
+                    android:id="@+id/newproducts_buybt"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_weight="1"
@@ -295,23 +384,24 @@
                     android:text="私聊" />
 
                 <Button
-                    android:id="@+id/newproducts_buybt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/buttonstylemain"
-                    android:text="@string/newproducts_buybt" />
-
-                <Button
                     android:id="@+id/newproducts_shopcarbt"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_weight="1"
+                    android:background="@drawable/buttonstylemain"
+                    android:text="買了" />
+
+                <Button
+                    android:id="@+id/functionlist_dickshopbt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
                     android:background="@drawable/buttonstyle"
-                    android:text="@string/newproducts_shopcarbt" />
+                    android:text="加入購物車" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
 
 </android.support.constraint.ConstraintLayout>

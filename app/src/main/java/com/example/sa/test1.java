@@ -36,4 +36,7 @@ public interface test1<normalgood> {
             "Content-Type: application/json; charset=utf-8"
     })
     Call<Res<ShopCar>> addAShopCar(@Body Req<ShopCar> data);
+
+    @GET("normalgood?api_key=keyq0EkjYQRAzfrUN")
+    Call<newproduct1> getNewproduct();
 }
