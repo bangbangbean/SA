@@ -108,7 +108,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="213dp"
+                android:layout_height="144dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -148,7 +148,7 @@
                 <TextView
                     android:id="@+id/narrative"
                     android:layout_width="315dp"
-                    android:layout_height="131dp"
+                    android:layout_height="67dp"
                     android:textColor="@color/black" />
 
                 <TextView
