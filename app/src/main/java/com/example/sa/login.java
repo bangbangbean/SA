@@ -118,10 +118,10 @@ public class login extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else if(log==0){
-                    test2.setText("warning : 查無帳號");
+                    test2.setText("Warning : 查無帳號");
             }
                 else if (log==1 && passd==0){
-                    test2.setText(" warning :密碼錯誤");
+                    test2.setText("Warning : 密碼錯誤");
                 }
 
 //            test2.setText("帳號是: "+user+"\n"+"密碼是: "+pass);
