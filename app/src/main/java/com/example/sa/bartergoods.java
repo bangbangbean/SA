@@ -72,7 +72,7 @@ public class bartergoods extends AppCompatActivity {
                 area.setText(response.body().getfields(0).getChange_area());
                 changeproduct.setText(response.body().getfields(0).getProductclass().get(0));
                 pricerange.setText(response.body().getfields(0).getRange_you_want_to_change());
-                series.setText(response.body().getfields(0).getProduct_series());
+                series.setText(response.body().getfields(0).getChange_product_name());
             }
 
             @Override

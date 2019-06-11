@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newproducts">
+    tools:context=".bartergoods">
 
     <TextView
         android:id="@+id/textView2"
@@ -12,9 +12,8 @@
         android:layout_height="60dp"
         android:background="@color/red"
         android:gravity="center"
-        android:text="@string/bartergoods_name"
-        android:textColor="#FFFFFF"
         android:textSize="22sp"
+        android:textColor="@color/white"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,7 +83,7 @@
 
                 <LinearLayout
                     android:layout_width="318dp"
-                    android:layout_height="55dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -92,14 +91,13 @@
                         android:id="@+id/selleraccount"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:gravity="center_vertical"
+                        android:gravity="bottom"
                         android:textColor="@color/black" />
 
                     <TextView
                         android:id="@+id/changearea"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:gravity="center_vertical"
                         android:textColor="@color/black" />
 
                 </LinearLayout>
@@ -108,7 +106,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="144dp"
+                android:layout_height="210dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -121,14 +119,15 @@
                 <TextView
                     android:id="@+id/productname"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="bottom"
                     android:text="@string/bartergoods_b"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:textColor="@color/black" />
 
 
@@ -141,14 +140,15 @@
                 <TextView
                     android:id="@+id/productnarrative"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="31dp"
+                    android:gravity="bottom"
                     android:text="@string/bartergoods_c"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/narrative"
                     android:layout_width="315dp"
-                    android:layout_height="67dp"
+                    android:layout_height="95dp"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -207,7 +207,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="40dp"
 
                     android:orientation="horizontal">
 
@@ -241,31 +241,31 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="108dp"
+                android:layout_height="179dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView25"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1dp"
                     android:layout_weight="1"
                     android:background="@color/lightgray" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
+                    android:gravity="bottom"
                     android:text="欲交換的商品:"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/changeproduct"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
                     android:textColor="@color/black" />
 
                 <TextView
@@ -277,22 +277,23 @@
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
+                    android:gravity="bottom"
                     android:text="欲交易金額:"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/pricerange"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="34dp"
                     android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/textView28"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="1dp"
                     android:layout_weight="1"
-                    android:background="@color/lightgray"/>
+                    android:background="@color/lightgray" />
 
             </LinearLayout>
 
