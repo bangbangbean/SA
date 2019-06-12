@@ -96,13 +96,16 @@
                         android:id="@+id/selleraccount"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/changearea"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:textColor="@color/blue"/>
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:textColorHighlight="@color/blue" />
 
                 </LinearLayout>
 

@@ -1,6 +1,7 @@
 package com.example.sa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,14 +20,16 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class realhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     private Button dickshopbt;
     private Button exchangebt;
     private ImageButton shopcar;
     private ImageButton productbt;
+    private ImageButton productbt2;
+    private TextView fabe;
     private ImageButton productbt1;
 
 
@@ -34,6 +37,13 @@ public class realhome extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realhome);
+
+        fabe=(TextView) findViewById(R.id.fabe);
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
+
+        String x = session.getString("user_id","目前沒人登入");
+        fabe.setText("帳號為 : "+x);
 
         Toolbar toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
