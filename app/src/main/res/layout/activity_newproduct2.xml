@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".newproducts">
+    tools:context=".newproduct2">
 
     >
 
@@ -66,7 +66,7 @@
                 android:layout_height="293dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/newproduct2" />
+                app:srcCompat="@drawable/nike1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
