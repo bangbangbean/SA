@@ -26,13 +26,13 @@ public class login extends AppCompatActivity {
     private EditText password ;
     private TextView tv4;
     private TextView tv3;
-    private ArrayList<String> acc =new ArrayList<String>();
-    private  ArrayList<String> passs = new ArrayList<String>();
+   final private ArrayList<String> acc =new ArrayList<String>();
+   final private  ArrayList<String> passs = new ArrayList<String>();
     private Button btn1;
     private ImageButton backbt;
     private Object test1;
     private TextView test2;
-
+   final private ArrayList<String> corpas =new ArrayList<String>();
 
 
 
@@ -69,8 +69,6 @@ public class login extends AppCompatActivity {
 //                   確認有沒有接到值 test2.setText(response.body().getRecords().get(1).getFields().getMember_account()+passs);
 
 
-
-
             }
 
             @Override
@@ -78,7 +76,6 @@ public class login extends AppCompatActivity {
                 t.printStackTrace();
             }
         });
-
 
 
 
@@ -111,34 +108,52 @@ public class login extends AppCompatActivity {
             {
                 int log =0;
                 int passd=0;
+
               String user =useraccount.getText().toString();
                 String pass = password.getText().toString();
                 for (int i=0 ; i<acc.size();i=i+1){
                     if (acc.get(i).equals(user)){
+                        corpas.clear();
+                        corpas.add(passs.get(i));
                         log=1;
-                        break;
-                    }
-                }
-                for (int j =0 ;j<passs.size();j=j+1){
-                    if (passs.get(j).equals(pass)){
-                        passd=1;
-                        break;
-                    }
-                }
-                if (log==1 && passd==1){
-                    editor.putString("user_id",user);
-                    editor.commit();
-                    Intent intent= new Intent(login.this, realhome.class);
-                    startActivity(intent);
-                }
-                else if(log==0){
-                    test2.setText("Warning : 查無帳號");
-            }
-                else if (log==1 && passd==0){
-                    test2.setText("Warning : 密碼錯誤");
-                }
 
-//            test2.setText("帳號是: "+user+"\n"+"密碼是: "+pass);
+
+                        break;
+                    }
+                }
+                if(log==1){
+
+                    if (corpas.get(0).equals(pass)){
+                        editor.putString("user_id",user);
+                        editor.commit();
+                        Intent intent= new Intent(login.this, realhome.class);
+                        startActivity(intent);
+                    }
+                    else {
+                        test2.setText("Warning : 密碼錯誤!");
+                    }
+
+
+
+
+                }
+                else{
+                    test2.setText("Warning : 查無此帳號! ");
+                }
+//
+//                if (log==1 && passd==1){
+//                    editor.putString("user_id",user);
+//                    editor.commit();
+
+//                }
+//                else if(log==0){
+//                    test2.setText("Warning : 查無帳號");
+//            }
+//                else if (log==1 && passd==0){
+//                    test2.setText("Warning : 密碼錯誤");
+//                }
+
+
 
 
 
