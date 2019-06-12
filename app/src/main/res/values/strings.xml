@@ -200,9 +200,6 @@
     </string-array>
 
 
-
-
-
     ---------------------------------------------------------------------------
     //購物車
     <string name="shopcar_edit">編輯</string>
@@ -212,7 +209,7 @@
     <string name="shopcar_good3p">NTD:1200</string>
     <string name="shopcar_good1size">規格:</string>
     <string name="shopcar_good2size">規格:</string>
-    <string name="shopcar_bt">確定購買</string>
+    <string name="shopcar_bt">確定購買</string>>
     <string name="title_activity_realexchengehome">realexchengehome</string>
 
 
