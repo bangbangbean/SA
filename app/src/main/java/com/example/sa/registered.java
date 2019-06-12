@@ -46,6 +46,7 @@ public class registered extends AppCompatActivity {
         test=(TextView)findViewById(R.id.test123);
         test2=(TextView) findViewById(R.id.test2);
         String x = session.getString("user_id","目前沒人登入");
+        test2.setText(x);
 
 
         call.enqueue(new Callback<ListRes<Member>>() {
