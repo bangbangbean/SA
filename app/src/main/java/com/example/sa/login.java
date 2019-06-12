@@ -1,5 +1,6 @@
 package com.example.sa;
 
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,17 +32,29 @@ public class login extends AppCompatActivity {
     private ImageButton backbt;
     private Object test1;
     private TextView test2;
+
+
+
+
     memberlst memberlst;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.activity_login);
+
         test1 =RetrofitManager.getInstance().getAPI();
         final Call<ListRes<Member>> call= ((test1) test1).getmem();
         test2=(TextView)findViewById(R.id.test2);
+
         useraccount =(EditText)findViewById(R.id.useraccount);
         password =(EditText)findViewById(R.id.password);
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        final SharedPreferences.Editor editor=session.edit();
+
         call.enqueue(new Callback<ListRes<Member>>() {
             @Override
             public void onResponse(Call<ListRes<Member>> call, Response<ListRes<Member>> response) {
@@ -113,7 +126,8 @@ public class login extends AppCompatActivity {
                     }
                 }
                 if (log==1 && passd==1){
-
+                    editor.putString("user_id",user);
+                    editor.commit();
                     Intent intent= new Intent(login.this, realhome.class);
                     startActivity(intent);
                 }

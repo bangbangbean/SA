@@ -1,6 +1,7 @@
 package com.example.sa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +19,7 @@ import retrofit2.Response;
 import retrofit2.Call;
 
 public class registered extends AppCompatActivity {
+
     private EditText username ;
     private EditText useraddress;
     private  EditText password;
@@ -29,6 +31,8 @@ public class registered extends AppCompatActivity {
     private ArrayList<String> accr =new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registered);
 
@@ -41,6 +45,9 @@ public class registered extends AppCompatActivity {
         userpasswordcheck=(EditText)findViewById(R.id.userpasswordcheck);
         test=(TextView)findViewById(R.id.test123);
         test2=(TextView) findViewById(R.id.test2);
+        String x = session.getString("user_id","目前沒人登入");
+        test2.setText(x);
+
         call.enqueue(new Callback<ListRes<Member>>() {
             @Override
             public void onResponse(Call<ListRes<Member>> call, Response<ListRes<Member>> response) {
