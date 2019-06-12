@@ -96,56 +96,78 @@
                         android:id="@+id/selleraccount"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:gravity="center_vertical"
                         android:textColor="@color/black"/>
 
                     <TextView
                         android:id="@+id/changearea"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
-                        android:textColor="@color/black"/>
+                        android:gravity="center_vertical"
+                        android:textColor="@color/blue"
+                        android:textColorHighlight="@color/blue" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="210dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/textview_border3" />
+
+                <TextView
                     android:id="@+id/productname"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="bottom"
                     android:text="@string/bartergoods_b"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/name"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/black"/>
+                    android:layout_height="30dp"
+                    android:textColor="@color/black" />
+
 
                 <TextView
-                    android:id="@+id/space"
+                    android:id="@+id/textView30"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="1dp"
+                    android:background="@drawable/textview_border3" />
 
                 <TextView
                     android:id="@+id/productnarrative"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="31dp"
+                    android:gravity="bottom"
                     android:text="@string/bartergoods_c"
-                    android:textColor="@color/black"/>
+                    android:textColor="@color/black" />
 
                 <TextView
                     android:id="@+id/narrative"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="315dp"
+                    android:layout_height="95dp"
                     android:textColor="@color/black" />
 
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightgray" />
+
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"

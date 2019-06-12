@@ -25,8 +25,7 @@ public class newproducts extends AppCompatActivity {
     private TextView name;
     private TextView narrative;
     private TextView price;
-    private TextView color;
-    private TextView size;
+
     private TextView method;
     private TextView area;
     private TextView areaa;
@@ -66,8 +65,7 @@ public class newproducts extends AppCompatActivity {
         name = (TextView) findViewById(R.id.name);
         narrative = (TextView) findViewById(R.id.narrative);
         price = (TextView) findViewById(R.id.price);
-        color = (TextView) findViewById(R.id.color);
-        size = (TextView) findViewById(R.id.size);
+
         method = (TextView) findViewById(R.id.method);
         areaa = (TextView) findViewById(R.id.area);
         preparetime = (TextView) findViewById(R.id.time);
@@ -93,8 +91,6 @@ public class newproducts extends AppCompatActivity {
                 name.setText(response.body().getfields(2).getNormal_product_name());
                 narrative.setText(response.body().getfields(2).getNormal_product_narrative());
                 price.setText(response.body().getfields(2).getNormal_product_price()+"");
-                color.setText(response.body().getfields(2).getNormal_product_color());
-                size.setText(response.body().getfields(2).getNormal_product_size());
                 method.setText(response.body().getfields(2).getTransport_way().get(0));
                 areaa.setText(response.body().getfields(2).getArea());
                 preparetime.setText(response.body().getfields(2).getPrepare_time());
@@ -111,8 +107,7 @@ public class newproducts extends AppCompatActivity {
                 name.setText(t.getMessage());
                 narrative.setText(t.getMessage());
                 price.setText(t.getMessage());
-                color.setText(t.getMessage());
-                size.setText(t.getMessage());
+
                 method.setText(t.getMessage());
                 areaa.setText(t.getMessage());
                 preparetime.setText(t.getMessage());
