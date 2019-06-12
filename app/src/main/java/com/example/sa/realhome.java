@@ -27,7 +27,8 @@ public class realhome extends AppCompatActivity
     private Button exchangebt;
     private ImageButton shopcar;
     private ImageButton productbt;
-    private ImageButton productbt2;
+    private ImageButton productbt1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,12 +83,12 @@ public class realhome extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        productbt2 = (ImageButton) findViewById(R.id.newproduct2);
-        productbt2.setOnClickListener(new View.OnClickListener()
+        productbt1 = (ImageButton) findViewById(R.id.newproduct2);
+        productbt1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(realhome.this, newproducts.class);
+                Intent intent= new Intent(realhome.this, newproduct2.class);
                 startActivity(intent);
             }
         });

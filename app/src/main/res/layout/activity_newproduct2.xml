@@ -66,7 +66,7 @@
                 android:layout_height="293dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
-                app:srcCompat="@drawable/newproduct1" />
+                app:srcCompat="@drawable/newproduct2" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -377,7 +377,7 @@
                 <ImageView
                     android:id="@+id/imageView12"
                     android:layout_width="188dp"
-                    android:layout_height="126dp"
+                    android:layout_height="124dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="8dp"
@@ -395,7 +395,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/i"
+                    android:id="@+id/newproducts_buybt"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_weight="1"
@@ -403,7 +403,7 @@
                     android:text="私聊" />
 
                 <Button
-                    android:id="@+id/newproducts_buybt"
+                    android:id="@+id/newproducts_shopcarbt"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_weight="1"
@@ -411,7 +411,7 @@
                     android:text="買了" />
 
                 <Button
-                    android:id="@+id/newproducts_shopcarbt"
+                    android:id="@+id/functionlist_dickshopbt"
                     android:layout_width="wrap_content"
                     android:layout_height="60dp"
                     android:layout_weight="1"

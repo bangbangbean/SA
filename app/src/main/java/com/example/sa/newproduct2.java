@@ -15,7 +15,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class newproducts extends AppCompatActivity {
+public class newproduct2 extends AppCompatActivity {
     test1 test1;
     private Button newproducts_shopcarbt;
     private Button newproducts_buybt;
@@ -41,7 +41,7 @@ public class newproducts extends AppCompatActivity {
         newproducts_shopcarbt = (Button) findViewById(R.id.newproducts_shopcarbt);
         newproducts_shopcarbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(newproducts.this, checkout.class);
+                Intent intent= new Intent(newproduct2.this, checkout.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +56,7 @@ public class newproducts extends AppCompatActivity {
         backbt = (ImageButton) findViewById(R.id.imageButton2);
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(newproducts.this, realhome.class);
+                Intent intent= new Intent(newproduct2.this, realhome.class);
                 startActivity(intent);
             }
         });
@@ -85,15 +85,15 @@ public class newproducts extends AppCompatActivity {
         call.enqueue(new Callback<newproduct1>() {
             @Override
             public void onResponse(Call<com.example.sa.newproduct1> call, Response<newproduct1> response) {
-                textView2.setText(response.body().getfields(1).getNormal_product_name());
-                selleraccount.setText(response.body().getfields(1).getMember_name().get(0));
-                area.setText(response.body().getfields(1).getArea());
-                name.setText(response.body().getfields(1).getNormal_product_name());
-                narrative.setText(response.body().getfields(1).getNormal_product_narrative());
-                price.setText(response.body().getfields(1).getNormal_product_price()+"");
-                method.setText(response.body().getfields(1).getTransport_way().get(0));
-                areaa.setText(response.body().getfields(1).getArea());
-                preparetime.setText(response.body().getfields(1).getPrepare_time());
+                textView2.setText(response.body().getfields(0).getNormal_product_name());
+                selleraccount.setText(response.body().getfields(0).getMember_name().get(0));
+                area.setText(response.body().getfields(0).getArea());
+                name.setText(response.body().getfields(0).getNormal_product_name());
+                narrative.setText(response.body().getfields(0).getNormal_product_narrative());
+                price.setText(response.body().getfields(0).getNormal_product_price()+"");
+                method.setText(response.body().getfields(0).getTransport_way().get(0));
+                areaa.setText(response.body().getfields(0).getArea());
+                preparetime.setText(response.body().getfields(0).getPrepare_time());
 
             }
 
@@ -135,7 +135,7 @@ public class newproducts extends AppCompatActivity {
 
 
                 number.add(response.body().getFields().getNormal_product_number() + "");
-                 postinfor();//新增資料
+                postinfor();//新增資料
 
             }
 
