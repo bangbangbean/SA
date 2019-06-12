@@ -1,6 +1,7 @@
 package com.example.sa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,6 +42,12 @@ public class checkout extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkout);
+
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
+
+        String x = session.getString("user_id","目前沒人登入");
+
         backbt = (ImageButton) findViewById(R.id.imageButton2);
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -161,14 +168,19 @@ public class checkout extends AppCompatActivity {
     }
     public void postinfor() {
         test1 = RetrofitManager.getInstance().getAPI();
-
         List<String> buyer = new ArrayList<>();
+        List<String> seller = new ArrayList<>();
         List<String> shopcar = new ArrayList<>();
-        buyer.add("406401252");
-        shopcar.add("32");
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
 
+        String who = session.getString("user_id","目前沒人登入");
+
+        buyer.add(who);
+        seller.add("405401231");
+        shopcar.add("32");
                 Call<Res<checkorder>> call = test1.addACheckorder(new Req<>(new checkorder
-                        (buyer, shopcar, str, str2, order_payprice, order_totalmoney)
+                        (buyer, seller, shopcar, str, str2, order_payprice, order_totalmoney)
         ));
         call.enqueue(new Callback<Res<checkorder>>() {
             @Override

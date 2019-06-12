@@ -4,9 +4,9 @@ import java.util.List;
 
 public class checkorder {
     private Integer num = null;
-    private List<String> Seller_account;
     private List<String> added_to_shopcar;
     private List<String> buyer_account;
+    private List<String> seller_account;
     private List<String> normal_product_number;
     private List<String> member_name;
     private List<String> shopcar_name;
@@ -18,10 +18,12 @@ public class checkorder {
     private String order_sendway;
     private String order_payway;
     private int order_payprice;
-    public checkorder(List<String> buyer_account,
-                      List<String> shopcar, String order_sendway,
-                      String order_payway, int order_payprice,int order_totalmoney) {
+
+    public checkorder(List<String> buyer_account, List<String> seller_account,
+                      List<String> shopcar, String order_sendway, String order_payway,
+                      int order_payprice,int order_totalmoney) {
         this.buyer_account = buyer_account;
+        this.seller_account = seller_account;
         this.shopcar = shopcar;
         this.order_sendway = order_sendway;
         this.order_payway = order_payway;
@@ -62,11 +64,7 @@ public class checkorder {
     }
 
     public List<String> getSeller_account() {
-        return Seller_account;
-    }
-
-    public void setSeller_account(List<String> Seller_account) {
-        this.Seller_account = Seller_account;
+        return seller_account;
     }
 
     public List<String> getAdded_to_shopcar() {

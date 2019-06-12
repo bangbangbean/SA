@@ -1,6 +1,7 @@
 package com.example.sa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -142,8 +143,13 @@ public class newproducts extends AppCompatActivity {
     public void postinfor() {
         test1 = RetrofitManager.getInstance().getAPI();
 
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
+
+        String who = session.getString("user_id","目前沒人登入");
+
         List<String> buyer = new ArrayList<>();
-        buyer.add("406401252");
+        buyer.add(who);
 
         Call<Res<ShopCar>> call = test1.addAShopCar(new Req<>(new ShopCar(buyer, number)));
         call.enqueue(new Callback<Res<ShopCar>>() {

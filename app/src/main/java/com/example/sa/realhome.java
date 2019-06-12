@@ -24,7 +24,6 @@ import android.widget.TextView;
 
 public class realhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     private Button dickshopbt;
     private Button exchangebt;
     private ImageButton shopcar;
@@ -35,7 +34,8 @@ public class realhome extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realhome);
-        fabe=(TextView)findViewById(R.id.fabe);
+
+        fabe=(TextView) findViewById(R.id.fabe);
         SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
         SharedPreferences.Editor editor=session.edit();
 
