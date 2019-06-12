@@ -64,7 +64,7 @@ public class newproduct2 extends AppCompatActivity {
         area = (TextView) findViewById(R.id.changearea);
         name = (TextView) findViewById(R.id.name);
         narrative = (TextView) findViewById(R.id.narrative);
-        price = (TextView) findViewById(R.id.price);
+        //price = (TextView) findViewById(R.id.price);
 
         method = (TextView) findViewById(R.id.method);
         areaa = (TextView) findViewById(R.id.area);
@@ -90,7 +90,7 @@ public class newproduct2 extends AppCompatActivity {
                 area.setText(response.body().getfields(0).getArea());
                 name.setText(response.body().getfields(0).getNormal_product_name());
                 narrative.setText(response.body().getfields(0).getNormal_product_narrative());
-                price.setText(response.body().getfields(0).getNormal_product_price()+"");
+                //price.setText(response.body().getfields(0).getNormal_product_price()+"");
                 method.setText(response.body().getfields(0).getTransport_way().get(0));
                 areaa.setText(response.body().getfields(0).getArea());
                 preparetime.setText(response.body().getfields(0).getPrepare_time());
@@ -106,7 +106,7 @@ public class newproduct2 extends AppCompatActivity {
                 area.setText(t.getMessage());
                 name.setText(t.getMessage());
                 narrative.setText(t.getMessage());
-                price.setText(t.getMessage());
+                //price.setText(t.getMessage());
 
                 method.setText(t.getMessage());
                 areaa.setText(t.getMessage());

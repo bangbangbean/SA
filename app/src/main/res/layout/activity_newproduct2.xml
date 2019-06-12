@@ -165,69 +165,6 @@
             </LinearLayout>
 
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="27dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/productprice"
-                    android:layout_width="146dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/bartergoods_d"
-                    android:textColor="@color/black"/>
-
-                <TextView
-                    android:id="@+id/price"
-                    android:layout_width="357dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="24dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/productcolor"
-                    android:layout_width="19dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/bartergoods_e"
-                    android:textColor="@color/black"/>
-
-                <TextView
-                    android:id="@+id/color"
-                    android:layout_width="343dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="@color/black"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="22dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/productsize"
-                    android:layout_width="32dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/bartergoods_f"
-                    android:textColor="@color/black"/>
-
-                <TextView
-                    android:id="@+id/size"
-                    android:layout_width="355dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:textColor="@color/black" />
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
