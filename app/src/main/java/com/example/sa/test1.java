@@ -41,4 +41,11 @@ public interface test1<normalgood> {
 
     @GET("normalgood?api_key=keyq0EkjYQRAzfrUN")
     Call<newproduct1> getNewproduct();
+
+    @POST("ordersystem?api_key=keyq0EkjYQRAzfrUN") // 用@Body表示要傳送Body資料
+    @Headers({
+            "Accept: application/json; charset=utf-8",
+            "Content-Type: application/json; charset=utf-8"
+    })
+    Call<Res<checkorder>> addACheckorder(@Body Req<checkorder> data);
 }

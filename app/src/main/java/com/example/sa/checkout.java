@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -18,10 +19,10 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class checkout extends AppCompatActivity {
-
+    private Button okbt;
     private ImageButton backbt;
     checkout1 checkout1;
-    private Object test1;
+    test1 test1;
     private TextView productname;
     private TextView num;
     private TextView size;
@@ -31,9 +32,11 @@ public class checkout extends AppCompatActivity {
     private TextView pricesend;
     private TextView finalprice;
     private int total=0;
-    private int finaltotal=0;
+    private int order_totalmoney = 0;
+    private int order_payprice = 0;
     private String str;
-    private List<String> number = new ArrayList<>();
+    private String str2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +48,19 @@ public class checkout extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        okbt = (Button) findViewById(R.id.okbt);
+        okbt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                postinfor();
+                Intent intent= new Intent(checkout.this, newproducts.class);
+                startActivity(intent);
+            }
+        });
+        //-------------------------------------------------------------------------------------------
         final Spinner spinner = (Spinner) findViewById(R.id.howsend);
         str = (String) spinner.getSelectedItem();
         pricesend = (TextView) findViewById(R.id.pricesend);
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,
@@ -60,21 +72,29 @@ public class checkout extends AppCompatActivity {
                     pricesend.setText("0");
                     int dEt1 = Integer.valueOf(pricesend.getText().toString());
                     finalprice.setText(dEt1+total+"");
+                    order_payprice = dEt1;
+                    order_totalmoney = (dEt1+total);
                 }
                 else if (str.equals("超商取貨")){
                     pricesend.setText("60");
                     int dEt1 = Integer.valueOf(pricesend.getText().toString());
                     finalprice.setText(dEt1+total+"");
+                    order_payprice = 60;
+                    order_totalmoney = (dEt1+total);
                 }
                 else if (str.equals("宅配")){
                     pricesend.setText(120+"");
                     int dEt1 = Integer.valueOf(pricesend.getText().toString());
                     finalprice.setText(dEt1+total+"");
+                    order_payprice = 120;
+                    order_totalmoney = (dEt1+total);
                 }
                 else if (str.equals("店到店")){
                     pricesend.setText(30+"");
                     int dEt1 = Integer.valueOf(pricesend.getText().toString());
                     finalprice.setText(dEt1+total+"");
+                    order_payprice = 30;
+                    order_totalmoney = (dEt1+total);
                 }
             }
             @Override
@@ -83,8 +103,21 @@ public class checkout extends AppCompatActivity {
             }
         });
 
-        Spinner spinner1 = (Spinner) findViewById(R.id.howbuy);
+        final Spinner spinner1 = (Spinner) findViewById(R.id.howbuy);
 
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view,
+                                       int position, long id) {
+                str2 = (String) spinner1.getSelectedItem();
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // TODO Auto-generated method stub
+            }
+        });
+
+        //------------------------------------------------------------------------------------------
         productname = (TextView) findViewById(R.id.productname);
         num = (TextView) findViewById(R.id.num);
         size = (TextView) findViewById(R.id.size);
@@ -126,5 +159,24 @@ public class checkout extends AppCompatActivity {
             }
         });
     }
+    public void postinfor() {
+        test1 = RetrofitManager.getInstance().getAPI();
 
+        List<String> buyer = new ArrayList<>();
+        List<String> shopcar = new ArrayList<>();
+        buyer.add("406401252");
+        shopcar.add("32");
+
+                Call<Res<checkorder>> call = test1.addACheckorder(new Req<>(new checkorder
+                        (buyer, shopcar, str, str2, order_payprice, order_totalmoney)
+        ));
+        call.enqueue(new Callback<Res<checkorder>>() {
+            @Override
+            public void onResponse(Call<Res<checkorder>> call, Response<Res<checkorder>> response) {
+            }
+            @Override
+            public void onFailure(Call<Res<checkorder>> call, Throwable t) {
+            }
+        });
+    }
 }

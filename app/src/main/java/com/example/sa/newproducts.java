@@ -96,10 +96,6 @@ public class newproducts extends AppCompatActivity {
                 preparetime.setText(response.body().getfields(2).getPrepare_time());
 
             }
-
-
-
-
             @Override
             public void onFailure(Call<newproduct1> call, Throwable t) {
                 selleraccount.setText(t.getMessage());
@@ -126,9 +122,6 @@ public class newproducts extends AppCompatActivity {
         Call<Res<NormalGood>> call = test1.getNormalGoodId("recc2pQOPkvJEOWnA");
 
         // 4. 執行call
-
-
-
         call.enqueue(new Callback<Res<NormalGood>>() {
             @Override
             public void onResponse(Call<Res<NormalGood>> call, Response<Res<NormalGood>> response) {
@@ -164,6 +157,5 @@ public class newproducts extends AppCompatActivity {
 
             }
         });
-
     }
 }
