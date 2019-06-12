@@ -24,18 +24,21 @@ import android.widget.TextView;
 
 public class realhome extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     private Button dickshopbt;
     private Button exchangebt;
     private ImageButton shopcar;
     private ImageButton productbt;
     private ImageButton productbt2;
     private TextView fabe;
+    private ImageButton productbt1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_realhome);
-        fabe=(TextView)findViewById(R.id.fabe);
+
+        fabe=(TextView) findViewById(R.id.fabe);
         SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
         SharedPreferences.Editor editor=session.edit();
 
@@ -90,12 +93,12 @@ public class realhome extends AppCompatActivity
                 startActivity(intent);
             }
         });
-        productbt2 = (ImageButton) findViewById(R.id.newproduct2);
-        productbt2.setOnClickListener(new View.OnClickListener()
+        productbt1 = (ImageButton) findViewById(R.id.newproduct2);
+        productbt1.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v)
             {
-                Intent intent= new Intent(realhome.this, newproducts.class);
+                Intent intent= new Intent(realhome.this, newproduct2.class);
                 startActivity(intent);
             }
         });

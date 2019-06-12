@@ -223,7 +223,7 @@
         app:layout_constraintStart_toEndOf="@+id/newproduct1"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/newproduct2" />
+        app:srcCompat="@drawable/nike2" />
 
     ----------------------------------------------------------------------------
     //功能列
