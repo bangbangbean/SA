@@ -17,7 +17,14 @@ import retrofit2.Response;
 
 public class shoppingcar extends AppCompatActivity {
     private ImageButton backbt;
-    @Override
+    //@Override
+//--------------------------------------------------------------------------------------
+            //ListView
+   // ListView listView = (ListView) findViewById(R.id.list_view);
+    //final ArrayList<String> list = new ArrayList<>();
+//--------------------------------------------------------------------------------------
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shoppingcar);
