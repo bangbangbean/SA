@@ -23,12 +23,6 @@ public class shoppingcar extends AppCompatActivity {
     private List<String> number = new ArrayList<>();
 
     private Button okbt;
-    //@Override
-//--------------------------------------------------------------------------------------
-            //ListView
-   // ListView listView = (ListView) findViewById(R.id.list_view);
-    //final ArrayList<String> list = new ArrayList<>();
-//--------------------------------------------------------------------------------------
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
