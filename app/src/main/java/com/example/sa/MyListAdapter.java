@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -56,7 +55,9 @@ public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
         holder.sellername.setText(shopCarRes.getFields().getMember_name().get(0));
         holder.goodname.setText(shopCarRes.getFields().getShopcar_name().get(0));
         holder.price.setText(shopCarRes.getFields().getShopcar_price().get(0));
+        holder.btt.setText("-");
         holder.num.setText(shopCarRes.getFields().getShopcar_num() + "");
+        holder.bbt.setText("+");
         holder.textt.setText("規格");
         holder.sizee.setText(shopCarRes.getFields().getShopcar_size().get(0));
         holder.colorr.setText(shopCarRes.getFields().getShopcar_color().get(0));

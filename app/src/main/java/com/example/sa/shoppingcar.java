@@ -21,7 +21,6 @@ public class shoppingcar extends AppCompatActivity {
     test1 test1;
     public static android.widget.ListView listView;
 
-    private List<String> number = new ArrayList<>();
 
     private Button okbt;
 
@@ -41,7 +40,6 @@ public class shoppingcar extends AppCompatActivity {
         listView = (android.widget.ListView) findViewById(R.id.lvl);
         getShopcar(who);
 
-
         backbt = (ImageButton) findViewById(R.id.imageButton2);
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -59,35 +57,14 @@ public class shoppingcar extends AppCompatActivity {
     }
     public  void getShopcar(final String who){
         test1 = RetrofitManager.getInstance().getAPI();
-
-        // 3. 建立連線的Call，此處設置call為myAPIService中的getAlbums()連線
         //TODO 後續修改
         Call<ListRes<ShopCar>> call = test1.getShop("{added_to_shopcar} = '"+ who+ "'");
         call.enqueue(new Callback<ListRes<ShopCar>>() {
             @Override
             public void onResponse(Call<ListRes<ShopCar>> call, Response<ListRes<ShopCar>> response) {
 
-
                 List<Res<ShopCar>> shopcarList = response.body().getRecords();
 
-
-//                int len = response.body().getRecords().length;
-//                int j = 0;
-//                int count = 0;
-//                count = len;
-//                String[][] date2 = new String[len][6];
-//                while (j < len){
-//                    if(response.body().getFields(j).getId().equals(who)){
-//                        date2[j][0] = response.body().getFields(j).getMember_name().get(j);
-//                        date2[j][1] = response.body().getFields(j).getShopcar_name().get(j);
-//                        date2[j][2] = response.body().getFields(j).getShopcar_price().get(j) + "";
-//                        date2[j][3] = response.body().getFields(j).getShopcar_num() + "";
-//                        date2[j][4] = "規格";
-//                        date2[j][5] = response.body().getFields(j).getShopcar_size().get(j);
-//                        date2[j][6] = response.body().getFields(j).getShopcar_color().get(j);
-//                        j++;
-//                    }
-//                }
             }
 
             @Override
@@ -97,10 +74,6 @@ public class shoppingcar extends AppCompatActivity {
         });
 
     }
-
-
-
-
 
 }
 
