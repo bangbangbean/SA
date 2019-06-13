@@ -8,6 +8,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface test1<normalgood> {
     // 測試網站      https://jsonplaceholder.typicode.com/
@@ -30,7 +31,7 @@ public interface test1<normalgood> {
     Call<ListRes<Member>> getmem();
 
     @GET("shopcar?view=Grid%20view&api_key=keyq0EkjYQRAzfrUN")
-    Call<ShopCar> getShop();
+    Call<ListRes<ShopCar>> getShop(@Query("filterByFormula") String formula);
 
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);

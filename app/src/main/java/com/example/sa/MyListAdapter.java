@@ -4,46 +4,39 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MyListAdapter extends BaseAdapter{
-    private shoppingcar shoppingcarr;
-    private String[][] date;
-    private Context mContext;
-    private LayoutInflater mLayoutInflater;
-    private int index;
+import java.lang.reflect.Array;
+import java.util.List;
 
-    MyListAdapter(String[][] date, shoppingcar context, int count){
-        this.index = count;
-        this.date = date;
-        this.shoppingcarr = context;
-        this.mLayoutInflater = LayoutInflater.from(context);
+public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
+    private Context mContext;
+    private List<Res<ShopCar>> mShopcarList;
+
+    MyListAdapter(Context context, List<Res<ShopCar>> shopcarList) {
+        super(context, 0, shopcarList);
+        mContext = context;
+        mShopcarList = shopcarList;
     }
 
     @Override
     public int getCount() {
-        return index;
+        return mShopcarList.size();
     }
 
-    public Object getItem(int position){
-        return null;
-    }
-
-    public long getItemId(int position){
-        return position;
-    }
-
-    static class ViewHolder{
+    static class ViewHolder {
         public TextView sellername, goodname, price, num, textt, sizee, colorr;
         public Button btt, bbt;
     }
 
-    public View getView(final int position, View convertView, ViewGroup parent){
+    public View getView(final int position, View convertView, ViewGroup parent) {
+        Res<ShopCar> shopCarRes = mShopcarList.get(position);
         ViewHolder holder = null;
-        if (convertView == null){
-            convertView = mLayoutInflater.inflate(R.layout.activity_list_view, null);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.activity_list_view, parent, false);
             holder = new ViewHolder();
             holder.sellername = (TextView) convertView.findViewById(R.id.sellername);
             holder.goodname = (TextView) convertView.findViewById(R.id.goodname);
@@ -56,18 +49,17 @@ public class MyListAdapter extends BaseAdapter{
             holder.btt = (Button) convertView.findViewById(R.id.btt);
             holder.bbt = (Button) convertView.findViewById(R.id.bbt);
             convertView.setTag(holder);
-        }
-        else{
+        } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.sellername.setText(date[position][1]);
-        holder.goodname.setText(date[position][2]);
-        holder.price.setText(date[position][3]);
-        holder.num.setText(date[position][4]);
-        holder.textt.setText(date[position][5]);
-        holder.sizee.setText(date[position][6]);
-        holder.colorr.setText(date[position][7]);
+        holder.sellername.setText(shopCarRes.getFields().getMember_name().get(0));
+        holder.goodname.setText(shopCarRes.getFields().getShopcar_name().get(0));
+        holder.price.setText(shopCarRes.getFields().getShopcar_price().get(0));
+        holder.num.setText(shopCarRes.getFields().getShopcar_num() + "");
+        holder.textt.setText("規格");
+        holder.sizee.setText(shopCarRes.getFields().getShopcar_size().get(0));
+        holder.colorr.setText(shopCarRes.getFields().getShopcar_color().get(0));
 
         return convertView;
     }
