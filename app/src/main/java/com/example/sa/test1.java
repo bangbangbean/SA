@@ -29,6 +29,9 @@ public interface test1<normalgood> {
     @GET("member?api_key=keyq0EkjYQRAzfrUN&view=Grid%20view")
     Call<ListRes<Member>> getmem();
 
+    @GET("shopcar?view=Grid%20view&api_key=keyq0EkjYQRAzfrUN")
+    Call<ShopCar> getShop();
+
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);
 

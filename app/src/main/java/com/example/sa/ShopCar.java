@@ -14,13 +14,28 @@ public class ShopCar {
     private List<String> shopcar_color;
     private List<String> shopcar_size;
 
+    private String id;
+    private ShopCar[] records;
+    private ShopCar fields;
+
+    public ShopCar[] getRecords(){
+        return records;
+    }
+    public ShopCar getFields(int i){
+        return records[i].fields;
+    }
+    public String getId(){
+        return id;
+    }
+    public ShopCar(String id){this.id = id;}
+
+
     public ShopCar(List<String> added_to_shopcar, List<String> normal_product_number) {
         this.added_to_shopcar = added_to_shopcar;
         this.normal_product_number = normal_product_number;
     }
 
-    public ShopCar() {
-    }
+
 
     public int getNum() {
         return num;
