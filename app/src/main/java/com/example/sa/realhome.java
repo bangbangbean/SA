@@ -44,7 +44,7 @@ public class realhome extends AppCompatActivity
         SharedPreferences.Editor editor=session.edit();
 
         String x = session.getString("user_id","目前沒人登入");
-        fabe.setText("帳號為 : "+x);
+        fabe.setText("用戶 : "+x+"歡迎您!");
 
         Toolbar toolbar = findViewById(R.id.toolbar2);
         setSupportActionBar(toolbar);
