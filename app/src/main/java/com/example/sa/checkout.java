@@ -177,10 +177,9 @@ public class checkout extends AppCompatActivity {
         String who = session.getString("user_id","目前沒人登入");
 
         buyer.add(who);
-        seller.add("405401231");
-        shopcar.add("32");
+        seller.add("405401234");
                 Call<Res<checkorder>> call = test1.addACheckorder(new Req<>(new checkorder
-                        (buyer, seller, shopcar, str, str2, order_payprice, order_totalmoney)
+                        (buyer, seller, str, str2, order_payprice, order_totalmoney)
         ));
         call.enqueue(new Callback<Res<checkorder>>() {
             @Override

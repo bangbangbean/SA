@@ -1,6 +1,7 @@
 package com.example.sa;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -38,15 +39,15 @@ public class newproduct2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newproducts);
 
-        newproducts_shopcarbt = (Button) findViewById(R.id.newproducts_shopcarbt);
+        newproducts_shopcarbt = (Button) findViewById(R.id.newproducts_buybt);
         newproducts_shopcarbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(newproduct2.this, checkout.class);
+                Intent intent= new Intent(newproduct2.this, shoppingcar.class);
                 startActivity(intent);
             }
         });
 
-        newproducts_buybt = (Button) findViewById(R.id.newproducts_buybt);
+        newproducts_buybt = (Button) findViewById(R.id.newproducts_shopcarbt);
         newproducts_buybt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getShopcar();
@@ -148,9 +149,13 @@ public class newproduct2 extends AppCompatActivity {
 
     public void postinfor() {
         test1 = RetrofitManager.getInstance().getAPI();
+        SharedPreferences session = getSharedPreferences("save_useraccount",MODE_PRIVATE);
+        SharedPreferences.Editor editor=session.edit();
+
+        String who = session.getString("user_id","目前沒人登入");
 
         List<String> buyer = new ArrayList<>();
-        buyer.add("406401252");
+        buyer.add(who);
 
         Call<Res<ShopCar>> call = test1.addAShopCar(new Req<>(new ShopCar(buyer, number)));
         call.enqueue(new Callback<Res<ShopCar>>() {

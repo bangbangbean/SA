@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -17,6 +18,7 @@ import retrofit2.Response;
 
 public class shoppingcar extends AppCompatActivity {
     private ImageButton backbt;
+    private Button okbt;
     //@Override
 //--------------------------------------------------------------------------------------
             //ListView
@@ -33,6 +35,13 @@ public class shoppingcar extends AppCompatActivity {
         backbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent intent= new Intent(shoppingcar.this, realexchengehome.class);
+                startActivity(intent);
+            }
+        });
+        okbt = (Button) findViewById(R.id.okbt);
+        okbt.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(shoppingcar.this, checkout.class);
                 startActivity(intent);
             }
         });

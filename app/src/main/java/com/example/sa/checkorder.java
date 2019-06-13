@@ -20,11 +20,10 @@ public class checkorder {
     private int order_payprice;
 
     public checkorder(List<String> buyer_account, List<String> seller_account,
-                      List<String> shopcar, String order_sendway, String order_payway,
+                      String order_sendway, String order_payway,
                       int order_payprice,int order_totalmoney) {
         this.buyer_account = buyer_account;
         this.seller_account = seller_account;
-        this.shopcar = shopcar;
         this.order_sendway = order_sendway;
         this.order_payway = order_payway;
         this.order_payprice = order_payprice;

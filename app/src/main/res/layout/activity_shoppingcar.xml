@@ -215,7 +215,7 @@
         app:srcCompat="@drawable/triangle" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/okbt"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:background="@color/red"
@@ -279,7 +279,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/lightgray"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
+        app:layout_constraintBottom_toBottomOf="@+id/okbt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
@@ -391,7 +391,7 @@
         android:text="@string/shopcar_good1size"
         android:textColor="@color/black"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button8"
+        app:layout_constraintBottom_toBottomOf="@+id/okbt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="parent"

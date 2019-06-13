@@ -39,15 +39,15 @@ public class newproducts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newproducts);
 
-        newproducts_shopcarbt = (Button) findViewById(R.id.newproducts_shopcarbt);
+        newproducts_shopcarbt = (Button) findViewById(R.id.newproducts_buybt);
         newproducts_shopcarbt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent= new Intent(newproducts.this, checkout.class);
+                Intent intent= new Intent(newproducts.this, shoppingcar.class);
                 startActivity(intent);
             }
         });
 
-        newproducts_buybt = (Button) findViewById(R.id.newproducts_buybt);
+        newproducts_buybt = (Button) findViewById(R.id.newproducts_shopcarbt);
         newproducts_buybt.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 getShopcar();
@@ -120,7 +120,7 @@ public class newproducts extends AppCompatActivity {
 
         // 3. 建立連線的Call，此處設置call為myAPIService中的getAlbums()連線
         //TODO 後續修改
-        Call<Res<NormalGood>> call = test1.getNormalGoodId("recc2pQOPkvJEOWnA");
+        Call<Res<NormalGood>> call = test1.getNormalGoodId("recpb68ablZeXbhiB");
 
         // 4. 執行call
         call.enqueue(new Callback<Res<NormalGood>>() {
