@@ -33,8 +33,7 @@ public class shoppingcar extends AppCompatActivity {
         //登入身分
         SharedPreferences session = getSharedPreferences("save_useraccount", MODE_PRIVATE);
         SharedPreferences.Editor editor = session.edit();
-        //String who = session.getString("user_id", "目前沒人登入");
-        String who  = "405401234";
+        String who = session.getString("user_id", "目前沒人登入");
         //------------------------------------------------------------------------------
 
 
