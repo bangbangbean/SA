@@ -31,6 +31,7 @@ public class realhome extends AppCompatActivity
     private ImageButton productbt2;
     private TextView fabe;
     private ImageButton productbt1;
+    private ImageButton uploadproduct;
 
 
     @Override
@@ -59,6 +60,13 @@ public class realhome extends AppCompatActivity
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
+        uploadproduct = (ImageButton) findViewById(R.id.uploadproduct);
+        uploadproduct.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent= new Intent(realhome.this, updateproducts.class);
+                startActivity(intent);
+            }
+        });
         shopcar = (ImageButton) findViewById(R.id.shopcar);
         shopcar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

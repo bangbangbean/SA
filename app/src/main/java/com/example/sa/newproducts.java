@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,6 +73,13 @@ public class newproducts extends AppCompatActivity {
         preparetime = (TextView) findViewById(R.id.time);
         textView2 = (TextView) findViewById(R.id.textView2);
         getNewproduct();
+
+        findViewById(R.id.newproducts_shopcarbt).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(newproducts.this, "已加入購物車!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

@@ -23,7 +23,7 @@
                 android:layout_width="58dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/test" />
+                app:srcCompat="@drawable/hung1" />
 
             <TextView
                 android:id="@+id/sellername"
@@ -45,7 +45,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="204dp"
-            android:background="@drawable/shape_black"
+            android:background="@drawable/textview_border3"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="118dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/littlemonster" />
+                    app:srcCompat="@drawable/nike1" />
             </LinearLayout>
 
             <LinearLayout

@@ -565,14 +565,9 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="113dp"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@color/red"
         android:text="OK"
         android:textColor="@color/black"

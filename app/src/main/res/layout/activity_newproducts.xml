@@ -62,7 +62,7 @@
 
             <ImageView
                 android:id="@+id/productpic"
-                android:layout_width="420dp"
+                android:layout_width="match_parent"
                 android:layout_height="293dp"
                 android:layout_weight="1"
                 android:scaleType="fitXY"
@@ -281,7 +281,7 @@
 
             <TextView
                 android:id="@+id/TextView9"
-                android:layout_width="414dp"
+                android:layout_width="match_parent"
                 android:layout_height="27dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
