@@ -8,7 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.List;
 
 public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
@@ -34,27 +33,29 @@ public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
     public View getView(final int position, View convertView, ViewGroup parent) {
         Res<ShopCar> shopCarRes = mShopcarList.get(position);
         ViewHolder holder = null;
-        if (convertView == null) {
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.activity_list_view, parent, false);
-            holder = new ViewHolder();
-            holder.sellername = (TextView) convertView.findViewById(R.id.sellername);
-            holder.goodname = (TextView) convertView.findViewById(R.id.goodname);
-            holder.price = (TextView) convertView.findViewById(R.id.price);
-            holder.num = (TextView) convertView.findViewById(R.id.num);
-            holder.textt = (TextView) convertView.findViewById(R.id.textt);
-            holder.sizee = (TextView) convertView.findViewById(R.id.size);
-            holder.colorr = (TextView) convertView.findViewById(R.id.colorr);
+        View itemView = convertView;
 
-            holder.btt = (Button) convertView.findViewById(R.id.btt);
-            holder.bbt = (Button) convertView.findViewById(R.id.bbt);
-            convertView.setTag(holder);
+        if (itemView == null) {
+            itemView = LayoutInflater.from(mContext).inflate(R.layout.activity_list_view, parent, false);
+            holder = new ViewHolder();
+            holder.sellername = (TextView) itemView.findViewById(R.id.sellername);
+            holder.goodname = (TextView) itemView.findViewById(R.id.goodname);
+            holder.price = (TextView) itemView.findViewById(R.id.price);
+            holder.num = (TextView) itemView.findViewById(R.id.num);
+            holder.textt = (TextView) itemView.findViewById(R.id.textt);
+            holder.sizee = (TextView) itemView.findViewById(R.id.size);
+            holder.colorr = (TextView) itemView.findViewById(R.id.colorr);
+
+            holder.btt = (Button) itemView.findViewById(R.id.btt);
+            holder.bbt = (Button) itemView.findViewById(R.id.bbt);
+            itemView.setTag(holder);
         } else {
-            holder = (ViewHolder) convertView.getTag();
+            holder = (ViewHolder) itemView.getTag();
         }
 
         holder.sellername.setText(shopCarRes.getFields().getMember_name().get(0));
         holder.goodname.setText(shopCarRes.getFields().getShopcar_name().get(0));
-        holder.price.setText(shopCarRes.getFields().getShopcar_price().get(0));
+        holder.price.setText(shopCarRes.getFields().getShopcar_price().get(0) + "");
         holder.btt.setText("-");
         holder.num.setText(shopCarRes.getFields().getShopcar_num() + "");
         holder.bbt.setText("+");
@@ -62,7 +63,13 @@ public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
         holder.sizee.setText(shopCarRes.getFields().getShopcar_size().get(0));
         holder.colorr.setText(shopCarRes.getFields().getShopcar_color().get(0));
 
-        return convertView;
+        return itemView;
+    }
+
+    public void updateData(List<Res<ShopCar>> shopcarList){
+        mShopcarList.clear();
+        mShopcarList.addAll(shopcarList);
+        notifyDataSetChanged();
     }
 
 }

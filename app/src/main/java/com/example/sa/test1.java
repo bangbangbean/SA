@@ -31,7 +31,7 @@ public interface test1<normalgood> {
     Call<ListRes<Member>> getmem();
 
     @GET("shopcar?view=Grid%20view&api_key=keyq0EkjYQRAzfrUN")
-    Call<ListRes<ShopCar>> getShop(@Query("filterByFormula") String formula);
+    Call<ListRes<ShopCar>> getShop(@Query(value = "filterByFormula", encoded = true) String formula);
 
     @GET("normalgood/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
     Call<Req> getShopcarById(@Path("id") String id);

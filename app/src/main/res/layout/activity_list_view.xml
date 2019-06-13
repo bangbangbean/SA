@@ -27,7 +27,7 @@
 
             <TextView
                 android:id="@+id/sellername"
-                android:layout_width="98dp"
+                android:layout_width="198dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center|center_horizontal|left"
@@ -36,7 +36,7 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="20dp"
+                android:layout_width="5dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/triangle" />
@@ -65,7 +65,7 @@
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="match_parent"
-                    android:layout_height="134dp"
+                    android:layout_height="118dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/littlemonster" />
             </LinearLayout>
