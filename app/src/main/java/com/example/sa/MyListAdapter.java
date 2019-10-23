@@ -45,7 +45,6 @@ public class MyListAdapter extends ArrayAdapter<Res<ShopCar>> {
             holder.textt = (TextView) itemView.findViewById(R.id.textt);
             holder.sizee = (TextView) itemView.findViewById(R.id.size);
             holder.colorr = (TextView) itemView.findViewById(R.id.colorr);
-
             holder.btt = (Button) itemView.findViewById(R.id.btt);
             holder.bbt = (Button) itemView.findViewById(R.id.bbt);
             itemView.setTag(holder);
